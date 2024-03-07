@@ -355,6 +355,12 @@ section {
     background: #F7F7F7;
 }
 
+.logos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+}
+
 .background-title {
     color: black;
     font-weight: bold;
@@ -543,13 +549,14 @@ section {
 
     .background, .details-container, .video {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 60% 40%;
+        grid-gap: 4em;
 
-        .right-logo {
-            grid-column: 1 / -1;
-            max-width: 60%;
-            // margin: auto;            
-        }
+        // .right-logo {
+        //     grid-column: 1 / -1;
+        //     max-width: 60%;
+            // margin: auto;
+        // }
     }
 
     .details-container {
