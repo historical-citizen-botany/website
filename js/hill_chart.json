@@ -1,0 +1,594 @@
+{
+    "config": {
+      "title": {"fontSize": 24, "font": "Lato"},
+      "axisX": {
+        "domainColor": "#000000",
+        "grid": false,
+        "labelFont": "Lato",
+        "labelFontSize": 18,
+        "titleFontWeight": 100,
+        "titleFont": "Lato",
+        "titleFontSize": 18,
+        "title": "X Axis Title (units)"
+      },
+      "axisY": {
+        "grid": false,
+        "labelFont": "Lato",
+        "labelFontSize": 18,
+        "titleFontWeight": 100,
+        "titleFont": "Lato",
+        "titleFontSize": 18,
+        "title": "Y Axis Title (units)"
+      },
+      "range": {
+        "category": [
+          "#AD3E37ff",
+          "#252825ff",
+          "#275474ff",
+          "#D3A346ff",
+          "#465F35ff",
+          "#8E8A87"
+        ],
+        "diverging": [
+          "#AD3E37ff",
+          "#252825ff",
+          "#275474ff",
+          "#D3A346ff",
+          "#465F35ff",
+          "#8E8A87"
+        ]
+      },
+      "legend": {
+        "labelFont": "Lato",
+        "labelFontSize": 18,
+        "titleFont": "Lato",
+        "titleFontSize": 18,
+        "title": "",
+        "orient": "top-left"
+      },
+      "view": {"stroke": "transparent"},
+      "background": "transparent",
+      "area": {"fill": "#9e403a"},
+      "line": {"color": "#9e403a", "stroke": "#9e403a"},
+      "point": {"filled": true},
+      "circle": {"color": "#9e403a"},
+      "text": {
+        "font": "Lato",
+        "color": "#9e403a",
+        "fontSize": 18,
+        "align": "right",
+        "fontWeight": 400,
+        "size": 18
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "color": {"field": "org", "type": "nominal"},
+          "x": {"field": "q", "title": "q-values", "type": "quantitative"},
+          "y": {
+            "field": "richness",
+            "title": "Hill numbers",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": "point",
+        "encoding": {
+          "opacity": {"value": 0},
+          "x": {"field": "q", "type": "quantitative"}
+        },
+        "selection": {
+          "selector064": {
+            "type": "single",
+            "nearest": true,
+            "on": "mouseover",
+            "fields": ["q"],
+            "empty": "none"
+          }
+        }
+      },
+      {
+        "mark": "point",
+        "encoding": {
+          "color": {"field": "org", "type": "nominal"},
+          "opacity": {
+            "condition": {"value": 1, "selection": "selector064"},
+            "value": 0
+          },
+          "x": {"field": "q", "title": "q-values", "type": "quantitative"},
+          "y": {
+            "field": "richness",
+            "title": "Hill numbers",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {"type": "rule", "color": "gray"},
+        "encoding": {"x": {"field": "q", "type": "quantitative"}},
+        "transform": [{"filter": {"selection": "selector064"}}]
+      },
+      {
+        "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+        "encoding": {
+          "color": {"field": "org", "type": "nominal"},
+          "text": {
+            "condition": {
+              "field": "richness",
+              "format": ".0f",
+              "type": "quantitative",
+              "selection": "selector064"
+            },
+            "value": " "
+          },
+          "x": {"field": "q", "title": "q-values", "type": "quantitative"},
+          "y": {
+            "field": "richness",
+            "title": "Hill numbers",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {"type": "area", "opacity": 0.3},
+        "encoding": {
+          "color": {
+            "field": "org",
+            "legend": {
+              "direction": "horizontal",
+              "orient": "bottom",
+              "title": ""
+            },
+            "type": "nominal"
+          },
+          "x": {"field": "q", "type": "quantitative"},
+          "y": {"field": "lci", "type": "quantitative"},
+          "y2": {"field": "uci"}
+        }
+      }
+    ],
+    "data": {"name": "data-9ddfddea2794d7704a589a396541f5e0"},
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+    "width": "container",
+    "datasets": {
+      "data-9ddfddea2794d7704a589a396541f5e0": [
+        {
+          "q": 0,
+          "richness": 799,
+          "lci": 773.8549000000003,
+          "uci": 824.8799,
+          "org": "empirical"
+        },
+        {
+          "q": 0.1,
+          "richness": 747.5074859081034,
+          "lci": 723.0376756797687,
+          "uci": 771.7564131562567,
+          "org": "empirical"
+        },
+        {
+          "q": 0.2,
+          "richness": 696.7045477618698,
+          "lci": 673.5321911653874,
+          "uci": 719.9073636284925,
+          "org": "empirical"
+        },
+        {
+          "q": 0.30000000000000004,
+          "richness": 646.9184401525589,
+          "lci": 624.8493666468729,
+          "uci": 668.9580783727677,
+          "org": "empirical"
+        },
+        {
+          "q": 0.4,
+          "richness": 598.4974714188338,
+          "lci": 577.5014732585366,
+          "uci": 619.5327264893272,
+          "org": "empirical"
+        },
+        {
+          "q": 0.5,
+          "richness": 551.7990589337909,
+          "lci": 531.9124028062388,
+          "uci": 571.6521859843313,
+          "org": "empirical"
+        },
+        {
+          "q": 0.6000000000000001,
+          "richness": 507.17360901355374,
+          "lci": 488.4603935190571,
+          "uci": 526.013415800995,
+          "org": "empirical"
+        },
+        {
+          "q": 0.7000000000000001,
+          "richness": 464.94521879692195,
+          "lci": 446.9588776119028,
+          "uci": 482.828841962765,
+          "org": "empirical"
+        },
+        {
+          "q": 0.8,
+          "richness": 425.3912331961082,
+          "lci": 408.1758561188243,
+          "uci": 442.5698023705886,
+          "org": "empirical"
+        },
+        {
+          "q": 0.9,
+          "richness": 388.72351738273454,
+          "lci": 372.02157717543633,
+          "uci": 405.4008226797725,
+          "org": "empirical"
+        },
+        {
+          "q": 1,
+          "richness": 355.0745411746948,
+          "lci": 339.15195018966887,
+          "uci": 371.16331961059433,
+          "org": "empirical"
+        },
+        {
+          "q": 1.1,
+          "richness": 324.49076822312657,
+          "lci": 309.1918675795987,
+          "uci": 339.9297143826762,
+          "org": "empirical"
+        },
+        {
+          "q": 1.2000000000000002,
+          "richness": 296.93446777781554,
+          "lci": 282.09232637360634,
+          "uci": 311.84525981668565,
+          "org": "empirical"
+        },
+        {
+          "q": 1.3,
+          "richness": 272.2933362216023,
+          "lci": 257.8771717933671,
+          "uci": 286.665524232593,
+          "org": "empirical"
+        },
+        {
+          "q": 1.4000000000000001,
+          "richness": 250.39581764773328,
+          "lci": 236.6730244169021,
+          "uci": 264.3307560426229,
+          "org": "empirical"
+        },
+        {
+          "q": 1.5,
+          "richness": 231.02921734097413,
+          "lci": 217.81309188883927,
+          "uci": 244.4213633628204,
+          "org": "empirical"
+        },
+        {
+          "q": 1.6,
+          "richness": 213.9577483740232,
+          "lci": 201.1369866319644,
+          "uci": 226.9718271414221,
+          "org": "empirical"
+        },
+        {
+          "q": 1.7000000000000002,
+          "richness": 198.93834169442871,
+          "lci": 186.5148528888981,
+          "uci": 211.61302303591194,
+          "org": "empirical"
+        },
+        {
+          "q": 1.8,
+          "richness": 185.73301474423536,
+          "lci": 173.66580452922378,
+          "uci": 198.12809845262237,
+          "org": "empirical"
+        },
+        {
+          "q": 1.9000000000000001,
+          "richness": 174.11749193811073,
+          "lci": 162.42968601977947,
+          "uci": 186.15872988650457,
+          "org": "empirical"
+        },
+        {
+          "q": 2,
+          "richness": 163.88640673875034,
+          "lci": 152.58763419809202,
+          "uci": 175.6170319788216,
+          "org": "empirical"
+        },
+        {
+          "q": 2.1,
+          "richness": 154.85574844381713,
+          "lci": 143.8640383664044,
+          "uci": 166.36420809282296,
+          "org": "empirical"
+        },
+        {
+          "q": 2.2,
+          "richness": 146.86330489817217,
+          "lci": 136.15296984328447,
+          "uci": 158.07120775402726,
+          "org": "empirical"
+        },
+        {
+          "q": 2.3000000000000003,
+          "richness": 139.76778715590464,
+          "lci": 129.33390519830857,
+          "uci": 150.72355441396502,
+          "org": "empirical"
+        },
+        {
+          "q": 2.4000000000000004,
+          "richness": 133.44718663727033,
+          "lci": 123.24295968362725,
+          "uci": 144.16022361865927,
+          "org": "empirical"
+        },
+        {
+          "q": 2.5,
+          "richness": 127.79676630437473,
+          "lci": 117.77567097378174,
+          "uci": 138.3219293366327,
+          "org": "empirical"
+        },
+        {
+          "q": 2.6,
+          "richness": 122.72695533801378,
+          "lci": 112.88533695247983,
+          "uci": 133.0796667180859,
+          "org": "empirical"
+        },
+        {
+          "q": 2.7,
+          "richness": 118.16131327069465,
+          "lci": 108.50862695538314,
+          "uci": 128.31788924247337,
+          "org": "empirical"
+        },
+        {
+          "q": 2.8000000000000003,
+          "richness": 114.03465503335568,
+          "lci": 104.61856765908995,
+          "uci": 124.01809484250347,
+          "org": "empirical"
+        },
+        {
+          "q": 2.9000000000000004,
+          "richness": 110.29137840032357,
+          "lci": 100.96086054320723,
+          "uci": 120.07514859765146,
+          "org": "empirical"
+        },
+        {
+          "q": 3,
+          "richness": 106.88400397227659,
+          "lci": 97.73553770478803,
+          "uci": 116.52961209646702,
+          "org": "empirical"
+        },
+        {
+          "q": 0,
+          "richness": 1170.492543092872,
+          "lci": 1088.1539833748675,
+          "uci": 1265.5252124204198,
+          "org": "estimation"
+        },
+        {
+          "q": 0.1,
+          "richness": 1081.7275772431037,
+          "lci": 1010.7373612168772,
+          "uci": 1162.7115512628156,
+          "org": "estimation"
+        },
+        {
+          "q": 0.2,
+          "richness": 993.6368049996862,
+          "lci": 932.7454532575409,
+          "uci": 1062.1563868684548,
+          "org": "estimation"
+        },
+        {
+          "q": 0.30000000000000004,
+          "richness": 907.1718608629059,
+          "lci": 855.9675405210312,
+          "uci": 964.3567648459971,
+          "org": "estimation"
+        },
+        {
+          "q": 0.4,
+          "richness": 823.3439366402021,
+          "lci": 780.145880685968,
+          "uci": 869.9328010978245,
+          "org": "estimation"
+        },
+        {
+          "q": 0.5,
+          "richness": 743.1676242264713,
+          "lci": 706.9024504228053,
+          "uci": 781.2847030596473,
+          "org": "estimation"
+        },
+        {
+          "q": 0.6000000000000001,
+          "richness": 667.5911103215379,
+          "lci": 636.4798038638387,
+          "uci": 699.6829219742694,
+          "org": "estimation"
+        },
+        {
+          "q": 0.7000000000000001,
+          "richness": 597.4214306241972,
+          "lci": 570.6933686574353,
+          "uci": 624.905797678439,
+          "org": "estimation"
+        },
+        {
+          "q": 0.8,
+          "richness": 533.257525180895,
+          "lci": 509.28545077024063,
+          "uci": 557.6971166965868,
+          "org": "estimation"
+        },
+        {
+          "q": 0.9,
+          "richness": 475.4447175459189,
+          "lci": 453.68463781192594,
+          "uci": 497.68187521990694,
+          "org": "estimation"
+        },
+        {
+          "q": 1,
+          "richness": 424.06054108170997,
+          "lci": 404.2131310210566,
+          "uci": 444.46685321547653,
+          "org": "estimation"
+        },
+        {
+          "q": 1.1,
+          "richness": 378.93424609627834,
+          "lci": 360.31601823396244,
+          "uci": 398.1221329322005,
+          "org": "estimation"
+        },
+        {
+          "q": 1.2000000000000002,
+          "richness": 339.69376091695113,
+          "lci": 322.26951431655806,
+          "uci": 357.96155169190865,
+          "org": "estimation"
+        },
+        {
+          "q": 1.3,
+          "richness": 305.82792696566383,
+          "lci": 289.14976539182493,
+          "uci": 323.31091105665115,
+          "org": "estimation"
+        },
+        {
+          "q": 1.4000000000000001,
+          "richness": 276.7505558028006,
+          "lci": 260.9820467672822,
+          "uci": 293.3882613402631,
+          "org": "estimation"
+        },
+        {
+          "q": 1.5,
+          "richness": 251.85580627433586,
+          "lci": 236.77795217220387,
+          "uci": 267.8106818429218,
+          "org": "estimation"
+        },
+        {
+          "q": 1.6,
+          "richness": 230.55934684475307,
+          "lci": 216.09512907087208,
+          "uci": 245.87305282990906,
+          "org": "estimation"
+        },
+        {
+          "q": 1.7000000000000002,
+          "richness": 212.32442819920934,
+          "lci": 198.32854059947752,
+          "uci": 226.9705038750794,
+          "org": "estimation"
+        },
+        {
+          "q": 1.8,
+          "richness": 196.67503376232173,
+          "lci": 183.24858787023214,
+          "uci": 210.68711642802347,
+          "org": "estimation"
+        },
+        {
+          "q": 1.9000000000000001,
+          "richness": 183.19953829478007,
+          "lci": 170.25163539048464,
+          "uci": 196.70810050560752,
+          "org": "estimation"
+        },
+        {
+          "q": 2,
+          "richness": 171.54828893520445,
+          "lci": 159.1184803439655,
+          "uci": 184.6145671608574,
+          "org": "estimation"
+        },
+        {
+          "q": 2.1,
+          "richness": 161.42786472546732,
+          "lci": 149.4111720873685,
+          "uci": 174.04515127215967,
+          "org": "estimation"
+        },
+        {
+          "q": 2.2,
+          "richness": 152.59395079407344,
+          "lci": 140.94123982890787,
+          "uci": 164.76617895485754,
+          "org": "estimation"
+        },
+        {
+          "q": 2.3000000000000003,
+          "richness": 144.84403292072014,
+          "lci": 133.49556348594356,
+          "uci": 156.61873817703898,
+          "org": "estimation"
+        },
+        {
+          "q": 2.4000000000000004,
+          "richness": 138.01057937492254,
+          "lci": 126.90048611705451,
+          "uci": 149.53208224520128,
+          "org": "estimation"
+        },
+        {
+          "q": 2.5,
+          "richness": 131.95501277521237,
+          "lci": 121.1569200549039,
+          "uci": 143.1979040938651,
+          "org": "estimation"
+        },
+        {
+          "q": 2.6,
+          "richness": 126.56255861727189,
+          "lci": 115.94535316405535,
+          "uci": 137.5446525464386,
+          "org": "estimation"
+        },
+        {
+          "q": 2.7,
+          "richness": 121.73793817858656,
+          "lci": 111.34164469953204,
+          "uci": 132.44958362391498,
+          "org": "estimation"
+        },
+        {
+          "q": 2.8000000000000003,
+          "richness": 117.40181782976424,
+          "lci": 107.17535129391356,
+          "uci": 127.95552838264767,
+          "org": "estimation"
+        },
+        {
+          "q": 2.9000000000000004,
+          "richness": 113.48790769304485,
+          "lci": 103.45131158330466,
+          "uci": 123.87409495562461,
+          "org": "estimation"
+        },
+        {
+          "q": 3,
+          "richness": 109.94060401149915,
+          "lci": 100.02033094877476,
+          "uci": 120.160534492133,
+          "org": "estimation"
+        }
+      ]
+    }
+  }

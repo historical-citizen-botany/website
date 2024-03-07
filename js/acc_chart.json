@@ -1,0 +1,4315 @@
+{
+  "config": {
+    "title": {"fontSize": 24, "font": "Lato"},
+    "axisX": {
+      "domainColor": "#000000",
+      "grid": false,
+      "labelFont": "Lato",
+      "labelFontSize": 18,
+      "titleFontWeight": 100,
+      "titleFont": "Lato",
+      "titleFontSize": 18,
+      "title": "X Axis Title (units)"
+    },
+    "axisY": {
+      "grid": false,
+      "labelFont": "Lato",
+      "labelFontSize": 18,
+      "titleFontWeight": 100,
+      "titleFont": "Lato",
+      "titleFontSize": 18,
+      "title": "Y Axis Title (units)"
+    },
+    "range": {
+      "category": [
+        "#AD3E37ff",
+        "#252825ff",
+        "#275474ff",
+        "#D3A346ff",
+        "#465F35ff",
+        "#8E8A87"
+      ],
+      "diverging": [
+        "#AD3E37ff",
+        "#252825ff",
+        "#275474ff",
+        "#D3A346ff",
+        "#465F35ff",
+        "#8E8A87"
+      ]
+    },
+    "legend": {
+      "labelFont": "Lato",
+      "labelFontSize": 18,
+      "titleFont": "Lato",
+      "titleFontSize": 18,
+      "title": "",
+      "orient": "top-left"
+    },
+    "view": {"stroke": "transparent"},
+    "background": "transparent",
+    "area": {"fill": "#9e403a"},
+    "line": {"color": "#9e403a", "stroke": "#9e403a"},
+    "point": {"filled": true},
+    "circle": {"color": "#9e403a"},
+    "text": {
+      "font": "Lato",
+      "color": "#9e403a",
+      "fontSize": 18,
+      "align": "right",
+      "fontWeight": 400,
+      "size": 18
+    }
+  },
+  "layer": [
+    {
+      "data": {"name": "data-dd70a4d4a1721a42a6790c4695149395"},
+      "mark": "line",
+      "encoding": {
+        "strokeDash": {
+          "field": "interpolated",
+          "legend": null,
+          "type": "nominal"
+        },
+        "x": {"field": "steps", "title": "Documents", "type": "quantitative"},
+        "y": {"field": "richness", "title": "Works", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {"name": "data-63219cfdf8db1ffb8c8a49d35913f0e3"},
+      "mark": {"type": "circle", "size": 150},
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "richness",
+            "title": "Empirical #works",
+            "type": "quantitative"
+          },
+          {
+            "field": "steps",
+            "title": "Empirical #documents",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "steps", "title": "Documents", "type": "quantitative"},
+        "y": {"field": "richness", "title": "Works", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {"name": "data-dd70a4d4a1721a42a6790c4695149395"},
+      "mark": {"type": "area", "opacity": 0.3},
+      "encoding": {
+        "x": {"field": "steps", "type": "quantitative"},
+        "y": {"field": "lci", "type": "quantitative"},
+        "y2": {"field": "uci"}
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "width": "container",
+  "datasets": {
+    "data-dd70a4d4a1721a42a6790c4695149395": [
+      {
+        "richness": 1.0000000010563126,
+        "lci": 1.0000000009440442,
+        "uci": 1.000000001150764,
+        "steps": 1,
+        "interpolated": false
+      },
+      {
+        "richness": 80.96461001463118,
+        "lci": 80.09868399829263,
+        "uci": 81.83894744813747,
+        "steps": 101,
+        "interpolated": false
+      },
+      {
+        "richness": 140.1429012667188,
+        "lci": 138.08828766037425,
+        "uci": 142.3549296673254,
+        "steps": 201,
+        "interpolated": false
+      },
+      {
+        "richness": 189.41940002976128,
+        "lci": 186.18047228769302,
+        "uci": 192.7615790902757,
+        "steps": 301,
+        "interpolated": false
+      },
+      {
+        "richness": 232.40556147709782,
+        "lci": 228.11682316169862,
+        "uci": 236.7422177656909,
+        "steps": 401,
+        "interpolated": false
+      },
+      {
+        "richness": 270.8064798471213,
+        "lci": 265.32866139362324,
+        "uci": 276.03194160584866,
+        "steps": 501,
+        "interpolated": false
+      },
+      {
+        "richness": 305.62013190953417,
+        "lci": 298.97222809821665,
+        "uci": 311.6484102748954,
+        "steps": 601,
+        "interpolated": false
+      },
+      {
+        "richness": 337.50997821942246,
+        "lci": 329.7255872720855,
+        "uci": 344.25780073329474,
+        "steps": 701,
+        "interpolated": false
+      },
+      {
+        "richness": 366.95245140803195,
+        "lci": 358.0726559902432,
+        "uci": 374.34176864020264,
+        "steps": 801,
+        "interpolated": false
+      },
+      {
+        "richness": 394.30686896308447,
+        "lci": 384.4518110032519,
+        "uci": 402.3662067273463,
+        "steps": 901,
+        "interpolated": false
+      },
+      {
+        "richness": 419.8534778814619,
+        "lci": 409.0829571878326,
+        "uci": 428.6103623684077,
+        "steps": 1001,
+        "interpolated": false
+      },
+      {
+        "richness": 443.81636322911083,
+        "lci": 432.19037899443856,
+        "uci": 453.23031056956756,
+        "steps": 1101,
+        "interpolated": false
+      },
+      {
+        "richness": 466.3782563754548,
+        "lci": 453.95605792675474,
+        "uci": 476.46998581475583,
+        "steps": 1201,
+        "interpolated": false
+      },
+      {
+        "richness": 487.6905934696446,
+        "lci": 474.39938087038416,
+        "uci": 498.33743688938114,
+        "steps": 1301,
+        "interpolated": false
+      },
+      {
+        "richness": 507.88059920868193,
+        "lci": 493.7421724690181,
+        "uci": 519.0518702624063,
+        "steps": 1401,
+        "interpolated": false
+      },
+      {
+        "richness": 527.0564181840784,
+        "lci": 512.0534704207682,
+        "uci": 538.7252861500253,
+        "steps": 1501,
+        "interpolated": false
+      },
+      {
+        "richness": 545.310919328326,
+        "lci": 529.4742821916909,
+        "uci": 557.4598259322507,
+        "steps": 1601,
+        "interpolated": false
+      },
+      {
+        "richness": 562.7245734012133,
+        "lci": 546.0847936265052,
+        "uci": 575.3437053292606,
+        "steps": 1701,
+        "interpolated": false
+      },
+      {
+        "richness": 579.3676674442963,
+        "lci": 561.95469489998,
+        "uci": 592.7342158733696,
+        "steps": 1801,
+        "interpolated": false
+      },
+      {
+        "richness": 595.3020349635995,
+        "lci": 577.1449675283214,
+        "uci": 609.4564242131369,
+        "steps": 1901,
+        "interpolated": false
+      },
+      {
+        "richness": 610.5824256759606,
+        "lci": 591.7093119429809,
+        "uci": 625.1621185348466,
+        "steps": 2001,
+        "interpolated": false
+      },
+      {
+        "richness": 625.2576025055232,
+        "lci": 605.6952987109747,
+        "uci": 640.1094057802608,
+        "steps": 2101,
+        "interpolated": false
+      },
+      {
+        "richness": 639.3712290161795,
+        "lci": 619.1453041555126,
+        "uci": 654.5073003708334,
+        "steps": 2201,
+        "interpolated": false
+      },
+      {
+        "richness": 652.9625938540819,
+        "lci": 632.0765479510136,
+        "uci": 668.681207423469,
+        "steps": 2301,
+        "interpolated": false
+      },
+      {
+        "richness": 666.0672069799981,
+        "lci": 644.5325886700215,
+        "uci": 682.3570430610829,
+        "steps": 2401,
+        "interpolated": false
+      },
+      {
+        "richness": 678.7172941445663,
+        "lci": 656.5549467535305,
+        "uci": 695.568953328267,
+        "steps": 2501,
+        "interpolated": false
+      },
+      {
+        "richness": 690.9422099428448,
+        "lci": 668.1718668142809,
+        "uci": 708.348128140977,
+        "steps": 2601,
+        "interpolated": false
+      },
+      {
+        "richness": 702.7687852697584,
+        "lci": 679.4091044200932,
+        "uci": 720.7231302589419,
+        "steps": 2701,
+        "interpolated": false
+      },
+      {
+        "richness": 714.2216215991555,
+        "lci": 690.2902334309433,
+        "uci": 732.720176931988,
+        "steps": 2801,
+        "interpolated": false
+      },
+      {
+        "richness": 725.3233418906557,
+        "lci": 700.8369064340245,
+        "uci": 744.3633830684621,
+        "steps": 2901,
+        "interpolated": false
+      },
+      {
+        "richness": 736.0948059492929,
+        "lci": 711.0690766928869,
+        "uci": 755.6966227726626,
+        "steps": 3001,
+        "interpolated": false
+      },
+      {
+        "richness": 746.555296491233,
+        "lci": 721.0051883425398,
+        "uci": 766.730000647597,
+        "steps": 3101,
+        "interpolated": false
+      },
+      {
+        "richness": 756.7226809697901,
+        "lci": 730.5198634527103,
+        "uci": 777.4595905385022,
+        "steps": 3201,
+        "interpolated": false
+      },
+      {
+        "richness": 766.6135532507453,
+        "lci": 739.771383876887,
+        "uci": 787.9018808408182,
+        "steps": 3301,
+        "interpolated": false
+      },
+      {
+        "richness": 776.2433584953249,
+        "lci": 748.7587385470791,
+        "uci": 798.0721369572233,
+        "steps": 3401,
+        "interpolated": false
+      },
+      {
+        "richness": 785.6265040092544,
+        "lci": 757.4962957349692,
+        "uci": 807.9845210489118,
+        "steps": 3501,
+        "interpolated": false
+      },
+      {
+        "richness": 794.7764583593016,
+        "lci": 765.9974856934869,
+        "uci": 817.6522011424369,
+        "steps": 3601,
+        "interpolated": false
+      },
+      {
+        "richness": 803.7056670335884,
+        "lci": 774.2747342209113,
+        "uci": 827.2282449226941,
+        "steps": 3701,
+        "interpolated": true
+      },
+      {
+        "richness": 812.4225609209827,
+        "lci": 782.3368051038008,
+        "uci": 836.7202577081384,
+        "steps": 3801,
+        "interpolated": true
+      },
+      {
+        "richness": 820.9322929822494,
+        "lci": 790.1894808635222,
+        "uci": 846.0122674224958,
+        "steps": 3901,
+        "interpolated": true
+      },
+      {
+        "richness": 829.2397865332803,
+        "lci": 797.8382930642804,
+        "uci": 855.1082657309101,
+        "steps": 4001,
+        "interpolated": true
+      },
+      {
+        "richness": 837.3498478846302,
+        "lci": 805.2886246191972,
+        "uci": 864.012172215418,
+        "steps": 4101,
+        "interpolated": true
+      },
+      {
+        "richness": 845.267169122213,
+        "lci": 812.5457138515095,
+        "uci": 872.7278354031032,
+        "steps": 4201,
+        "interpolated": true
+      },
+      {
+        "richness": 852.9963308219138,
+        "lci": 819.6146584431191,
+        "uci": 881.2590337905127,
+        "steps": 4301,
+        "interpolated": true
+      },
+      {
+        "richness": 860.5418046996875,
+        "lci": 826.5004192736722,
+        "uci": 889.6094768638076,
+        "steps": 4401,
+        "interpolated": true
+      },
+      {
+        "richness": 867.9079561986747,
+        "lci": 833.2078241532276,
+        "uci": 897.7828061141214,
+        "steps": 4501,
+        "interpolated": true
+      },
+      {
+        "richness": 875.0990470148342,
+        "lci": 839.8124488442367,
+        "uci": 905.7825960476646,
+        "steps": 4601,
+        "interpolated": true
+      },
+      {
+        "richness": 882.1192375625529,
+        "lci": 846.4781858601993,
+        "uci": 913.6123551901187,
+        "steps": 4701,
+        "interpolated": true
+      },
+      {
+        "richness": 888.9725893816585,
+        "lci": 852.9896817517471,
+        "uci": 921.2755270849018,
+        "steps": 4801,
+        "interpolated": true
+      },
+      {
+        "richness": 895.6630674872279,
+        "lci": 859.3504749239388,
+        "uci": 928.7754912849177,
+        "steps": 4901,
+        "interpolated": true
+      },
+      {
+        "richness": 902.1945426635518,
+        "lci": 865.5640236049785,
+        "uci": 936.115564337409,
+        "steps": 5001,
+        "interpolated": true
+      },
+      {
+        "richness": 908.570793703582,
+        "lci": 871.6337076296469,
+        "uci": 943.2990007615895,
+        "steps": 5101,
+        "interpolated": true
+      },
+      {
+        "richness": 914.7955095951563,
+        "lci": 877.5628301841937,
+        "uci": 950.3289940187155,
+        "steps": 5201,
+        "interpolated": true
+      },
+      {
+        "richness": 920.872291655267,
+        "lci": 883.3355759149357,
+        "uci": 957.2086774743267,
+        "steps": 5301,
+        "interpolated": true
+      },
+      {
+        "richness": 926.8046556136071,
+        "lci": 888.9586585364051,
+        "uci": 963.9411253523474,
+        "steps": 5401,
+        "interpolated": true
+      },
+      {
+        "richness": 932.5960336466006,
+        "lci": 894.4502921476451,
+        "uci": 970.5293536808299,
+        "steps": 5501,
+        "interpolated": true
+      },
+      {
+        "richness": 938.2497763630915,
+        "lci": 899.5808744921409,
+        "uci": 976.9763212290788,
+        "steps": 5601,
+        "interpolated": true
+      },
+      {
+        "richness": 943.7691547428435,
+        "lci": 904.4646717554579,
+        "uci": 983.2849304359528,
+        "steps": 5701,
+        "interpolated": true
+      },
+      {
+        "richness": 949.1573620289686,
+        "lci": 909.2259161965092,
+        "uci": 989.4580283291416,
+        "steps": 5801,
+        "interpolated": true
+      },
+      {
+        "richness": 954.4175155753823,
+        "lci": 913.8677097371269,
+        "uci": 995.4984074352451,
+        "steps": 5901,
+        "interpolated": true
+      },
+      {
+        "richness": 959.5526586503524,
+        "lci": 918.3930751050525,
+        "uci": 1001.408806680475,
+        "steps": 6001,
+        "interpolated": true
+      },
+      {
+        "richness": 964.5657621971857,
+        "lci": 922.8049578724412,
+        "uci": 1007.1919122818477,
+        "steps": 6101,
+        "interpolated": true
+      },
+      {
+        "richness": 969.4597265530703,
+        "lci": 927.1062284415124,
+        "uci": 1012.850358628721,
+        "steps": 6201,
+        "interpolated": true
+      },
+      {
+        "richness": 974.23738312707,
+        "lci": 931.2996839787335,
+        "uci": 1018.3867291545649,
+        "steps": 6301,
+        "interpolated": true
+      },
+      {
+        "richness": 978.901496038239,
+        "lci": 935.3880502988659,
+        "uci": 1023.7710088621143,
+        "steps": 6401,
+        "interpolated": true
+      },
+      {
+        "richness": 983.4547637148067,
+        "lci": 939.3739837001965,
+        "uci": 1028.9388119579069,
+        "steps": 6501,
+        "interpolated": true
+      },
+      {
+        "richness": 987.8998204553563,
+        "lci": 943.2600727522068,
+        "uci": 1033.99035780846,
+        "steps": 6601,
+        "interpolated": true
+      },
+      {
+        "richness": 992.2392379529017,
+        "lci": 947.0488400369434,
+        "uci": 1038.9281920601084,
+        "steps": 6701,
+        "interpolated": true
+      },
+      {
+        "richness": 996.4755267827434,
+        "lci": 950.7427438452683,
+        "uci": 1043.7548069127392,
+        "steps": 6801,
+        "interpolated": true
+      },
+      {
+        "richness": 1000.6111378549649,
+        "lci": 954.3963128776963,
+        "uci": 1048.4726421640903,
+        "steps": 6901,
+        "interpolated": true
+      },
+      {
+        "richness": 1004.6484638324106,
+        "lci": 957.8413758438435,
+        "uci": 1053.0840862363918,
+        "steps": 7001,
+        "interpolated": true
+      },
+      {
+        "richness": 1008.5898405149624,
+        "lci": 961.1994318038774,
+        "uci": 1057.5914771855628,
+        "steps": 7101,
+        "interpolated": true
+      },
+      {
+        "richness": 1012.4375481909203,
+        "lci": 964.4515336265093,
+        "uci": 1061.9971036931556,
+        "steps": 7201,
+        "interpolated": true
+      },
+      {
+        "richness": 1016.1938129562668,
+        "lci": 967.6078984266684,
+        "uci": 1066.3032060412293,
+        "steps": 7301,
+        "interpolated": true
+      },
+      {
+        "richness": 1019.8608080025756,
+        "lci": 970.8593604829813,
+        "uci": 1070.5119770703768,
+        "steps": 7401,
+        "interpolated": true
+      },
+      {
+        "richness": 1023.4406548743158,
+        "lci": 974.0729115937462,
+        "uci": 1074.6255631210881,
+        "steps": 7501,
+        "interpolated": true
+      },
+      {
+        "richness": 1026.9354246962735,
+        "lci": 977.1539379536806,
+        "uci": 1078.6460649586588,
+        "steps": 7601,
+        "interpolated": true
+      },
+      {
+        "richness": 1030.3471393718035,
+        "lci": 980.0948705418075,
+        "uci": 1082.5755386818491,
+        "steps": 7701,
+        "interpolated": true
+      },
+      {
+        "richness": 1033.677772752604,
+        "lci": 982.8912997171218,
+        "uci": 1086.415996615492,
+        "steps": 7801,
+        "interpolated": true
+      },
+      {
+        "richness": 1036.9292517806912,
+        "lci": 985.5813462374565,
+        "uci": 1090.169408187273,
+        "steps": 7901,
+        "interpolated": true
+      },
+      {
+        "richness": 1040.1034576032332,
+        "lci": 988.2018770430133,
+        "uci": 1093.8377007888607,
+        "steps": 8001,
+        "interpolated": true
+      },
+      {
+        "richness": 1043.2022266608913,
+        "lci": 990.7547306092308,
+        "uci": 1097.4227606216234,
+        "steps": 8101,
+        "interpolated": true
+      },
+      {
+        "richness": 1046.2273517502936,
+        "lci": 993.2416955566734,
+        "uci": 1100.926433527122,
+        "steps": 8201,
+        "interpolated": true
+      },
+      {
+        "richness": 1049.1805830612604,
+        "lci": 995.6645120380028,
+        "uci": 1104.3540594707306,
+        "steps": 8301,
+        "interpolated": true
+      },
+      {
+        "richness": 1052.0636291893788,
+        "lci": 998.0248730854097,
+        "uci": 1107.707041314131,
+        "steps": 8401,
+        "interpolated": true
+      },
+      {
+        "richness": 1054.8781581245123,
+        "lci": 1000.3244259196367,
+        "uci": 1110.983867676902,
+        "steps": 8501,
+        "interpolated": true
+      },
+      {
+        "richness": 1057.6257982158188,
+        "lci": 1002.5647732217377,
+        "uci": 1114.1862303722855,
+        "steps": 8601,
+        "interpolated": true
+      },
+      {
+        "richness": 1060.3081391138335,
+        "lci": 1004.7474743686325,
+        "uci": 1117.315784860191,
+        "steps": 8701,
+        "interpolated": true
+      },
+      {
+        "richness": 1062.9267326901638,
+        "lci": 1006.8660300306848,
+        "uci": 1120.3741509873353,
+        "steps": 8801,
+        "interpolated": true
+      },
+      {
+        "richness": 1065.4830939353258,
+        "lci": 1008.9288911278271,
+        "uci": 1123.3629137137318,
+        "steps": 8901,
+        "interpolated": true
+      },
+      {
+        "richness": 1067.9787018352445,
+        "lci": 1010.9386531375895,
+        "uci": 1126.2836238257255,
+        "steps": 9001,
+        "interpolated": true
+      },
+      {
+        "richness": 1070.4150002269228,
+        "lci": 1012.8967153344453,
+        "uci": 1129.1377986357736,
+        "steps": 9101,
+        "interpolated": true
+      },
+      {
+        "richness": 1072.7933986337748,
+        "lci": 1014.8044391575146,
+        "uci": 1131.9269226691779,
+        "steps": 9201,
+        "interpolated": true
+      },
+      {
+        "richness": 1075.1152730811077,
+        "lci": 1016.6631492611756,
+        "uci": 1134.652448337953,
+        "steps": 9301,
+        "interpolated": true
+      },
+      {
+        "richness": 1077.381966892223,
+        "lci": 1018.4722632262832,
+        "uci": 1137.2289479559913,
+        "steps": 9401,
+        "interpolated": true
+      },
+      {
+        "richness": 1079.5947914655976,
+        "lci": 1020.098696375564,
+        "uci": 1139.715976759378,
+        "steps": 9501,
+        "interpolated": true
+      },
+      {
+        "richness": 1081.7550270335942,
+        "lci": 1021.6819629881518,
+        "uci": 1142.14449800216,
+        "steps": 9601,
+        "interpolated": true
+      },
+      {
+        "richness": 1083.8639234031434,
+        "lci": 1023.2232583213212,
+        "uci": 1144.515871018361,
+        "steps": 9701,
+        "interpolated": true
+      },
+      {
+        "richness": 1085.9227006788187,
+        "lci": 1024.723743028644,
+        "uci": 1146.8314241215105,
+        "steps": 9801,
+        "interpolated": true
+      },
+      {
+        "richness": 1087.932549968731,
+        "lci": 1026.1845442050976,
+        "uci": 1149.092455293834,
+        "steps": 9901,
+        "interpolated": true
+      },
+      {
+        "richness": 1089.8946340736454,
+        "lci": 1027.6067563994256,
+        "uci": 1151.3002328607568,
+        "steps": 10001,
+        "interpolated": true
+      },
+      {
+        "richness": 1091.8100881597206,
+        "lci": 1028.9914425948261,
+        "uci": 1153.455996151028,
+        "steps": 10101,
+        "interpolated": true
+      },
+      {
+        "richness": 1093.6800204152605,
+        "lci": 1030.3396351589718,
+        "uci": 1155.5609561427425,
+        "steps": 10201,
+        "interpolated": true
+      },
+      {
+        "richness": 1095.5055126918587,
+        "lci": 1031.6523367643604,
+        "uci": 1157.6162960955367,
+        "steps": 10301,
+        "interpolated": true
+      },
+      {
+        "richness": 1097.2876211303046,
+        "lci": 1032.9305212799532,
+        "uci": 1159.7021247935945,
+        "steps": 10401,
+        "interpolated": true
+      },
+      {
+        "richness": 1099.0273767716149,
+        "lci": 1034.1727152788217,
+        "uci": 1161.9333994950148,
+        "steps": 10501,
+        "interpolated": true
+      },
+      {
+        "richness": 1100.7257861535434,
+        "lci": 1035.3795468491294,
+        "uci": 1164.2188061288762,
+        "steps": 10601,
+        "interpolated": true
+      },
+      {
+        "richness": 1102.3838318929156,
+        "lci": 1036.5547137499293,
+        "uci": 1166.4557361118327,
+        "steps": 10701,
+        "interpolated": true
+      },
+      {
+        "richness": 1104.002473254122,
+        "lci": 1037.6990823557485,
+        "uci": 1168.6451881686921,
+        "steps": 10801,
+        "interpolated": true
+      },
+      {
+        "richness": 1105.5826467041015,
+        "lci": 1038.8134942344032,
+        "uci": 1170.7881414139301,
+        "steps": 10901,
+        "interpolated": true
+      },
+      {
+        "richness": 1107.1252664541364,
+        "lci": 1039.8987668895138,
+        "uci": 1172.8855557042891,
+        "steps": 11001,
+        "interpolated": true
+      },
+      {
+        "richness": 1108.6312249887699,
+        "lci": 1040.9556944799265,
+        "uci": 1174.9383719861967,
+        "steps": 11101,
+        "interpolated": true
+      },
+      {
+        "richness": 1110.1013935821538,
+        "lci": 1041.985048516738,
+        "uci": 1176.8409403807811,
+        "steps": 11201,
+        "interpolated": true
+      },
+      {
+        "richness": 1111.5366228021262,
+        "lci": 1042.9875785386907,
+        "uci": 1178.6375502704877,
+        "steps": 11301,
+        "interpolated": true
+      },
+      {
+        "richness": 1112.9377430023078,
+        "lci": 1043.964012766592,
+        "uci": 1180.3937509564155,
+        "steps": 11401,
+        "interpolated": true
+      },
+      {
+        "richness": 1114.3055648025036,
+        "lci": 1044.915058737462,
+        "uci": 1182.1104329851971,
+        "steps": 11501,
+        "interpolated": true
+      },
+      {
+        "richness": 1115.6408795576895,
+        "lci": 1045.8414039190363,
+        "uci": 1183.788467861249,
+        "steps": 11601,
+        "interpolated": true
+      },
+      {
+        "richness": 1116.94445981585,
+        "lci": 1046.7437163052582,
+        "uci": 1185.4287084348834,
+        "steps": 11701,
+        "interpolated": true
+      },
+      {
+        "richness": 1118.2170597649379,
+        "lci": 1047.6226449933738,
+        "uci": 1187.0319892831571,
+        "steps": 11801,
+        "interpolated": true
+      },
+      {
+        "richness": 1119.45941566921,
+        "lci": 1048.4788207432193,
+        "uci": 1188.5991270835716,
+        "steps": 11901,
+        "interpolated": true
+      },
+      {
+        "richness": 1120.6722462951948,
+        "lci": 1049.363639724077,
+        "uci": 1190.1309209807196,
+        "steps": 12001,
+        "interpolated": true
+      },
+      {
+        "richness": 1121.8562533275338,
+        "lci": 1050.2568722073172,
+        "uci": 1191.62815294601,
+        "steps": 12101,
+        "interpolated": true
+      },
+      {
+        "richness": 1123.0121217749438,
+        "lci": 1051.1274230422412,
+        "uci": 1193.0915881305727,
+        "steps": 12201,
+        "interpolated": true
+      },
+      {
+        "richness": 1124.1405203665288,
+        "lci": 1051.9758814770285,
+        "uci": 1194.5219752114488,
+        "steps": 12301,
+        "interpolated": true
+      },
+      {
+        "richness": 1125.242101938674,
+        "lci": 1052.8028210493342,
+        "uci": 1195.9200467311875,
+        "steps": 12401,
+        "interpolated": true
+      },
+      {
+        "richness": 1126.3175038127454,
+        "lci": 1053.6088000169275,
+        "uci": 1197.286519430936,
+        "steps": 12501,
+        "interpolated": true
+      },
+      {
+        "richness": 1127.3673481638125,
+        "lci": 1054.394361776211,
+        "uci": 1198.6220945771572,
+        "steps": 12601,
+        "interpolated": true
+      },
+      {
+        "richness": 1128.3922423806082,
+        "lci": 1055.1600352689388,
+        "uci": 1199.9274582820517,
+        "steps": 12701,
+        "interpolated": true
+      },
+      {
+        "richness": 1129.3927794169358,
+        "lci": 1055.906335377494,
+        "uci": 1201.2032818178109,
+        "steps": 12801,
+        "interpolated": true
+      },
+      {
+        "richness": 1130.369538134721,
+        "lci": 1056.6337633090593,
+        "uci": 1202.4502219247884,
+        "steps": 12901,
+        "interpolated": true
+      },
+      {
+        "richness": 1131.3230836389148,
+        "lci": 1057.3428069689776,
+        "uci": 1203.668921113701,
+        "steps": 13001,
+        "interpolated": true
+      },
+      {
+        "richness": 1132.2539676044348,
+        "lci": 1058.0339413236552,
+        "uci": 1204.860007961966,
+        "steps": 13101,
+        "interpolated": true
+      },
+      {
+        "richness": 1133.1627285953377,
+        "lci": 1058.7076287532536,
+        "uci": 1206.0240974042454,
+        "steps": 13201,
+        "interpolated": true
+      },
+      {
+        "richness": 1134.0498923764064,
+        "lci": 1059.3643193945254,
+        "uci": 1207.1617910173431,
+        "steps": 13301,
+        "interpolated": true
+      },
+      {
+        "richness": 1134.9159722173313,
+        "lci": 1060.0044514740225,
+        "uci": 1208.2736772995006,
+        "steps": 13401,
+        "interpolated": true
+      },
+      {
+        "richness": 1135.7614691896638,
+        "lci": 1060.628451631998,
+        "uci": 1209.3603319442336,
+        "steps": 13501,
+        "interpolated": true
+      },
+      {
+        "richness": 1136.5868724567115,
+        "lci": 1061.2367352372344,
+        "uci": 1210.4227099464802,
+        "steps": 13601,
+        "interpolated": true
+      },
+      {
+        "richness": 1137.3926595565438,
+        "lci": 1061.8297066930859,
+        "uci": 1211.4637320082866,
+        "steps": 13701,
+        "interpolated": true
+      },
+      {
+        "richness": 1138.179296678273,
+        "lci": 1062.4077597349683,
+        "uci": 1212.4811356342761,
+        "steps": 13801,
+        "interpolated": true
+      },
+      {
+        "richness": 1138.9472389317677,
+        "lci": 1062.971277719553,
+        "uci": 1213.47544800794,
+        "steps": 13901,
+        "interpolated": true
+      },
+      {
+        "richness": 1139.6969306109581,
+        "lci": 1063.5206339058943,
+        "uci": 1214.4471848177554,
+        "steps": 14001,
+        "interpolated": true
+      },
+      {
+        "richness": 1140.4288054508825,
+        "lci": 1064.054886295789,
+        "uci": 1215.3968504991026,
+        "steps": 14101,
+        "interpolated": true
+      },
+      {
+        "richness": 1141.143286878624,
+        "lci": 1064.5745660941855,
+        "uci": 1216.3249384713747,
+        "steps": 14201,
+        "interpolated": true
+      },
+      {
+        "richness": 1141.8407882582867,
+        "lci": 1065.08120209075,
+        "uci": 1217.2319313703722,
+        "steps": 14301,
+        "interpolated": true
+      },
+      {
+        "richness": 1142.521713130147,
+        "lci": 1065.5751286858558,
+        "uci": 1218.1183012760575,
+        "steps": 14401,
+        "interpolated": true
+      },
+      {
+        "richness": 1143.1864554441222,
+        "lci": 1066.0566714902748,
+        "uci": 1218.9845099357694,
+        "steps": 14501,
+        "interpolated": true
+      },
+      {
+        "richness": 1143.8353997876914,
+        "lci": 1066.5261475626899,
+        "uci": 1219.8310089829606,
+        "steps": 14601,
+        "interpolated": true
+      },
+      {
+        "richness": 1144.4689216083977,
+        "lci": 1066.983865640604,
+        "uci": 1220.6582401515516,
+        "steps": 14701,
+        "interpolated": true
+      },
+      {
+        "richness": 1145.087387431066,
+        "lci": 1067.430126364834,
+        "uci": 1221.4666354859794,
+        "steps": 14801,
+        "interpolated": true
+      },
+      {
+        "richness": 1145.6911550698537,
+        "lci": 1067.8652224977645,
+        "uci": 1222.2853380332135,
+        "steps": 14901,
+        "interpolated": true
+      },
+      {
+        "richness": 1146.2805738352674,
+        "lci": 1068.2894391355624,
+        "uci": 1223.112223669947,
+        "steps": 15001,
+        "interpolated": true
+      },
+      {
+        "richness": 1146.8559847362542,
+        "lci": 1068.703053914488,
+        "uci": 1223.9207488044058,
+        "steps": 15101,
+        "interpolated": true
+      },
+      {
+        "richness": 1147.4177206774948,
+        "lci": 1069.106337211511,
+        "uci": 1224.7113142114808,
+        "steps": 15201,
+        "interpolated": true
+      },
+      {
+        "richness": 1147.9661066520048,
+        "lci": 1069.499552339361,
+        "uci": 1225.4843121341078,
+        "steps": 15301,
+        "interpolated": true
+      },
+      {
+        "richness": 1148.5014599291608,
+        "lci": 1069.8829557361908,
+        "uci": 1226.240126457994,
+        "steps": 15401,
+        "interpolated": true
+      },
+      {
+        "richness": 1149.0240902382561,
+        "lci": 1070.2567971500002,
+        "uci": 1226.9791328829942,
+        "steps": 15501,
+        "interpolated": true
+      },
+      {
+        "richness": 1149.534299947695,
+        "lci": 1070.6213198179635,
+        "uci": 1227.701699091192,
+        "steps": 15601,
+        "interpolated": true
+      },
+      {
+        "richness": 1150.0323842399291,
+        "lci": 1070.9767606408166,
+        "uci": 1228.4081849117435,
+        "steps": 15701,
+        "interpolated": true
+      },
+      {
+        "richness": 1150.5186312822348,
+        "lci": 1071.3233503524266,
+        "uci": 1229.0989424825295,
+        "steps": 15801,
+        "interpolated": true
+      },
+      {
+        "richness": 1150.993322393433,
+        "lci": 1071.6613136847102,
+        "uci": 1229.7743164086942,
+        "steps": 15901,
+        "interpolated": true
+      },
+      {
+        "richness": 1151.4567322066466,
+        "lci": 1071.9908695279928,
+        "uci": 1230.43464391809,
+        "steps": 16001,
+        "interpolated": true
+      },
+      {
+        "richness": 1151.9091288281902,
+        "lci": 1072.3122310869753,
+        "uci": 1231.0802550137148,
+        "steps": 16101,
+        "interpolated": true
+      },
+      {
+        "richness": 1152.3507739926822,
+        "lci": 1072.6256060324051,
+        "uci": 1231.7136129612097,
+        "steps": 16201,
+        "interpolated": true
+      },
+      {
+        "richness": 1152.7819232144727,
+        "lci": 1072.9311966485907,
+        "uci": 1232.3333510785933,
+        "steps": 16301,
+        "interpolated": true
+      },
+      {
+        "richness": 1153.2028259354715,
+        "lci": 1073.2291999768677,
+        "uci": 1232.9392824677914,
+        "steps": 16401,
+        "interpolated": true
+      },
+      {
+        "richness": 1153.6137256694624,
+        "lci": 1073.5198079551324,
+        "uci": 1233.5317100846873,
+        "steps": 16501,
+        "interpolated": true
+      },
+      {
+        "richness": 1154.0148601429892,
+        "lci": 1073.803207553557,
+        "uci": 1234.110930381691,
+        "steps": 16601,
+        "interpolated": true
+      },
+      {
+        "richness": 1154.406461432892,
+        "lci": 1074.0795809065871,
+        "uci": 1234.677233442771,
+        "steps": 16701,
+        "interpolated": true
+      },
+      {
+        "richness": 1154.7887561005762,
+        "lci": 1074.3491054413407,
+        "uci": 1235.230903115848,
+        "steps": 16801,
+        "interpolated": true
+      },
+      {
+        "richness": 1155.1619653230894,
+        "lci": 1074.6119540024833,
+        "uci": 1235.7722171425594,
+        "steps": 16901,
+        "interpolated": true
+      },
+      {
+        "richness": 1155.5263050210833,
+        "lci": 1074.868294973713,
+        "uci": 1236.3014472854807,
+        "steps": 17001,
+        "interpolated": true
+      },
+      {
+        "richness": 1155.8819859837365,
+        "lci": 1075.1182923959223,
+        "uci": 1236.8188594528233,
+        "steps": 17101,
+        "interpolated": true
+      },
+      {
+        "richness": 1156.2292139907045,
+        "lci": 1075.3621060821383,
+        "uci": 1237.3247138206566,
+        "steps": 17201,
+        "interpolated": true
+      },
+      {
+        "richness": 1156.5681899311753,
+        "lci": 1075.5998917293437,
+        "uci": 1237.8192649527164,
+        "steps": 17301,
+        "interpolated": true
+      },
+      {
+        "richness": 1156.8991099200941,
+        "lci": 1075.8318010272453,
+        "uci": 1238.3027619178183,
+        "steps": 17401,
+        "interpolated": true
+      },
+      {
+        "richness": 1157.2221654116252,
+        "lci": 1076.0579817640914,
+        "uci": 1238.7754484049435,
+        "steps": 17501,
+        "interpolated": true
+      },
+      {
+        "richness": 1157.5375433099184,
+        "lci": 1076.2785779296155,
+        "uci": 1239.2375628360192,
+        "steps": 17601,
+        "interpolated": true
+      },
+      {
+        "richness": 1157.8454260772423,
+        "lci": 1076.4937298151863,
+        "uci": 1239.6893384764535,
+        "steps": 17701,
+        "interpolated": true
+      },
+      {
+        "richness": 1158.1459918395485,
+        "lci": 1076.7035741112372,
+        "uci": 1240.1310035434494,
+        "steps": 17801,
+        "interpolated": true
+      },
+      {
+        "richness": 1158.4394144895266,
+        "lci": 1076.9082440020625,
+        "uci": 1240.5627813121498,
+        "steps": 17901,
+        "interpolated": true
+      },
+      {
+        "richness": 1158.7258637872096,
+        "lci": 1077.1078692580486,
+        "uci": 1240.9848902196577,
+        "steps": 18001,
+        "interpolated": true
+      },
+      {
+        "richness": 1159.0055054581887,
+        "lci": 1077.3025763254004,
+        "uci": 1241.3975439669498,
+        "steps": 18101,
+        "interpolated": true
+      },
+      {
+        "richness": 1159.278501289495,
+        "lci": 1077.4924884134532,
+        "uci": 1241.8009516187485,
+        "steps": 18201,
+        "interpolated": true
+      },
+      {
+        "richness": 1159.5450092232004,
+        "lci": 1077.6777255796246,
+        "uci": 1242.195317701377,
+        "steps": 18301,
+        "interpolated": true
+      },
+      {
+        "richness": 1159.805183447796,
+        "lci": 1077.8584048120679,
+        "uci": 1242.580842298627,
+        "steps": 18401,
+        "interpolated": true
+      },
+      {
+        "richness": 1160.0591744873977,
+        "lci": 1078.0346401101067,
+        "uci": 1242.957721145702,
+        "steps": 18501,
+        "interpolated": true
+      },
+      {
+        "richness": 1160.3071292888321,
+        "lci": 1078.2065425624933,
+        "uci": 1243.3261457212398,
+        "steps": 18601,
+        "interpolated": true
+      },
+      {
+        "richness": 1160.5491913066526,
+        "lci": 1078.3742204235698,
+        "uci": 1243.6863033374823,
+        "steps": 18701,
+        "interpolated": true
+      },
+      {
+        "richness": 1160.785500586136,
+        "lci": 1078.5377791873716,
+        "uci": 1244.0493138822928,
+        "steps": 18801,
+        "interpolated": true
+      },
+      {
+        "richness": 1161.0161938443048,
+        "lci": 1078.6973216597485,
+        "uci": 1244.4146003098958,
+        "steps": 18901,
+        "interpolated": true
+      },
+      {
+        "richness": 1161.2414045490254,
+        "lci": 1078.8529480285429,
+        "uci": 1244.7718215657,
+        "steps": 19001,
+        "interpolated": true
+      },
+      {
+        "richness": 1161.461262996227,
+        "lci": 1079.0047559318841,
+        "uci": 1245.1211534432698,
+        "steps": 19101,
+        "interpolated": true
+      },
+      {
+        "richness": 1161.6758963852828,
+        "lci": 1079.152840524663,
+        "uci": 1245.4627679747612,
+        "steps": 19201,
+        "interpolated": true
+      },
+      {
+        "richness": 1161.8854288926027,
+        "lci": 1079.2972945432084,
+        "uci": 1245.7968335091973,
+        "steps": 19301,
+        "interpolated": true
+      },
+      {
+        "richness": 1162.0899817434747,
+        "lci": 1079.4382083682476,
+        "uci": 1246.1235147891884,
+        "steps": 19401,
+        "interpolated": true
+      },
+      {
+        "richness": 1162.2896732822014,
+        "lci": 1079.5756700861787,
+        "uci": 1246.44297302613,
+        "steps": 19501,
+        "interpolated": true
+      },
+      {
+        "richness": 1162.4846190405665,
+        "lci": 1079.7097655486991,
+        "uci": 1246.7553659738805,
+        "steps": 19601,
+        "interpolated": true
+      },
+      {
+        "richness": 1162.6749318046768,
+        "lci": 1079.8405784308525,
+        "uci": 1247.0608480009857,
+        "steps": 19701,
+        "interpolated": true
+      },
+      {
+        "richness": 1162.8607216802152,
+        "lci": 1079.9681902875168,
+        "uci": 1247.3595701614422,
+        "steps": 19801,
+        "interpolated": true
+      },
+      {
+        "richness": 1163.0420961561408,
+        "lci": 1080.0899753729113,
+        "uci": 1247.6516802640497,
+        "steps": 19901,
+        "interpolated": true
+      },
+      {
+        "richness": 1163.2191601668787,
+        "lci": 1080.2016188716825,
+        "uci": 1247.937322940365,
+        "steps": 20001,
+        "interpolated": true
+      },
+      {
+        "richness": 1163.3920161530293,
+        "lci": 1080.310550489493,
+        "uci": 1248.2166397112937,
+        "steps": 20101,
+        "interpolated": true
+      },
+      {
+        "richness": 1163.5607641206343,
+        "lci": 1080.4168374638102,
+        "uci": 1248.489769052337,
+        "steps": 20201,
+        "interpolated": true
+      },
+      {
+        "richness": 1163.7255016990368,
+        "lci": 1080.5205453169224,
+        "uci": 1248.7568464575234,
+        "steps": 20301,
+        "interpolated": true
+      },
+      {
+        "richness": 1163.8863241973645,
+        "lci": 1080.621737901312,
+        "uci": 1249.0180045020516,
+        "steps": 20401,
+        "interpolated": true
+      },
+      {
+        "richness": 1164.0433246596704,
+        "lci": 1080.7204774437735,
+        "uci": 1249.2733729036624,
+        "steps": 20501,
+        "interpolated": true
+      },
+      {
+        "richness": 1164.196593918764,
+        "lci": 1080.8168245883246,
+        "uci": 1249.523078582774,
+        "steps": 20601,
+        "interpolated": true
+      },
+      {
+        "richness": 1164.3462206487625,
+        "lci": 1080.9108384379206,
+        "uci": 1249.767245721388,
+        "steps": 20701,
+        "interpolated": true
+      },
+      {
+        "richness": 1164.4922914163938,
+        "lci": 1081.0025765950395,
+        "uci": 1250.0059958208128,
+        "steps": 20801,
+        "interpolated": true
+      },
+      {
+        "richness": 1164.6348907310787,
+        "lci": 1081.0920952011381,
+        "uci": 1250.2394477582015,
+        "steps": 20901,
+        "interpolated": true
+      },
+      {
+        "richness": 1164.7741010938257,
+        "lci": 1081.1794489750368,
+        "uci": 1250.4677178419477,
+        "steps": 21001,
+        "interpolated": true
+      },
+      {
+        "richness": 1164.91000304496,
+        "lci": 1081.2646912502446,
+        "uci": 1250.6909198659469,
+        "steps": 21101,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.0426752107217,
+        "lci": 1081.347874011274,
+        "uci": 1250.909165162757,
+        "steps": 21201,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.1721943487546,
+        "lci": 1081.429047928948,
+        "uci": 1251.1225626556645,
+        "steps": 21301,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.2986353925146,
+        "lci": 1081.508262394763,
+        "uci": 1251.3312189096964,
+        "steps": 21401,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.4220714946223,
+        "lci": 1081.5855655542998,
+        "uci": 1251.5352381815792,
+        "steps": 21501,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.5425740691849,
+        "lci": 1081.6610043397322,
+        "uci": 1251.734722468677,
+        "steps": 21601,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.660212833115,
+        "lci": 1081.7346245014542,
+        "uci": 1251.9297715569296,
+        "steps": 21701,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.775055846463,
+        "lci": 1081.8064706388423,
+        "uci": 1252.120483067798,
+        "steps": 21801,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.8871695517948,
+        "lci": 1081.8765862301939,
+        "uci": 1252.3069525042545,
+        "steps": 21901,
+        "interpolated": true
+      },
+      {
+        "richness": 1165.9966188126318,
+        "lci": 1081.9450136618395,
+        "uci": 1252.489273295812,
+        "steps": 22001,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.1034669509777,
+        "lci": 1082.0117942564866,
+        "uci": 1252.667536842643,
+        "steps": 22101,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.2077757839534,
+        "lci": 1082.0769683007838,
+        "uci": 1252.8418325587759,
+        "steps": 22201,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.309605659562,
+        "lci": 1082.1405750721465,
+        "uci": 1253.0122479144006,
+        "steps": 22301,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.4090154916028,
+        "lci": 1082.2026528648637,
+        "uci": 1253.1788684773076,
+        "steps": 22401,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.5060627937553,
+        "lci": 1082.2632390154936,
+        "uci": 1253.3417779534593,
+        "steps": 22501,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.600803712855,
+        "lci": 1082.3223699275864,
+        "uci": 1253.501058226728,
+        "steps": 22601,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.6932930613766,
+        "lci": 1082.380081095738,
+        "uci": 1253.6567893978108,
+        "steps": 22701,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.7835843491457,
+        "lci": 1082.4364071289995,
+        "uci": 1253.8090498223291,
+        "steps": 22801,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.8717298142974,
+        "lci": 1082.4913817736606,
+        "uci": 1253.957916148146,
+        "steps": 22901,
+        "interpolated": true
+      },
+      {
+        "richness": 1166.9577804534983,
+        "lci": 1082.545037935426,
+        "uci": 1254.103463351902,
+        "steps": 23001,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.041786051451,
+        "lci": 1082.5974077009955,
+        "uci": 1254.2457647747933,
+        "steps": 23101,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.123795209697,
+        "lci": 1082.648522359073,
+        "uci": 1254.3848921576032,
+        "steps": 23201,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.2038553747348,
+        "lci": 1082.6984124208113,
+        "uci": 1254.5209156750038,
+        "steps": 23301,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.282012865471,
+        "lci": 1082.747107639715,
+        "uci": 1254.6539039691415,
+        "steps": 23401,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.3583129000176,
+        "lci": 1082.7946370310203,
+        "uci": 1254.7839241825252,
+        "steps": 23501,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.4327996218526,
+        "lci": 1082.8410288905432,
+        "uci": 1254.9110419902142,
+        "steps": 23601,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.5055161253601,
+        "lci": 1082.8863108130547,
+        "uci": 1255.0353216313558,
+        "steps": 23701,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.5765044807627,
+        "lci": 1082.9305097101408,
+        "uci": 1255.156825940035,
+        "steps": 23801,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.6458057584591,
+        "lci": 1082.9736518276097,
+        "uci": 1255.275616375498,
+        "steps": 23901,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.7134600527893,
+        "lci": 1083.0157627624365,
+        "uci": 1255.3917530517363,
+        "steps": 24001,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.7795065052278,
+        "lci": 1083.0568674792514,
+        "uci": 1255.5052947664456,
+        "steps": 24101,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.84398332703,
+        "lci": 1083.0969903264015,
+        "uci": 1255.616299029379,
+        "steps": 24201,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.9069278213406,
+        "lci": 1083.1361550515903,
+        "uci": 1255.7248220901074,
+        "steps": 24301,
+        "interpolated": true
+      },
+      {
+        "richness": 1167.9683764047734,
+        "lci": 1083.1743848171,
+        "uci": 1255.830918965189,
+        "steps": 24401,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.0283646284815,
+        "lci": 1083.21170221462,
+        "uci": 1255.9346434647746,
+        "steps": 24501,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.086927198725,
+        "lci": 1083.2481292796822,
+        "uci": 1256.0360482186431,
+        "steps": 24601,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.1440979969511,
+        "lci": 1083.2836875057205,
+        "uci": 1256.1351847016958,
+        "steps": 24701,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.1999100993944,
+        "lci": 1083.3183978577651,
+        "uci": 1256.2321032589118,
+        "steps": 24801,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.2543957962155,
+        "lci": 1083.352280785768,
+        "uci": 1256.3268531297683,
+        "steps": 24901,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.3075866101806,
+        "lci": 1083.3853562375964,
+        "uci": 1256.4194824721549,
+        "steps": 25001,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.3595133149004,
+        "lci": 1083.4176436716707,
+        "uci": 1256.5100383857746,
+        "steps": 25101,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.410205952633,
+        "lci": 1083.4491620692863,
+        "uci": 1256.5985669350541,
+        "steps": 25201,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.4596938516665,
+        "lci": 1083.4799299466124,
+        "uci": 1256.6851131715694,
+        "steps": 25301,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.5080056432853,
+        "lci": 1083.5099653663685,
+        "uci": 1256.7697211559878,
+        "steps": 25401,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.5551692783354,
+        "lci": 1083.539285949212,
+        "uci": 1256.8524339795554,
+        "steps": 25501,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.6012120433957,
+        "lci": 1083.5679088848192,
+        "uci": 1256.9332937851193,
+        "steps": 25601,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.6461605765637,
+        "lci": 1083.5958509426891,
+        "uci": 1257.0123417877116,
+        "steps": 25701,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.690040882869,
+        "lci": 1083.6231284826572,
+        "uci": 1257.0896182946867,
+        "steps": 25801,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.732878349316,
+        "lci": 1083.649757465146,
+        "uci": 1257.1651627254394,
+        "steps": 25901,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.7746977595734,
+        "lci": 1083.675753461146,
+        "uci": 1257.2390136306947,
+        "steps": 26001,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.815523308312,
+        "lci": 1083.701131661942,
+        "uci": 1257.3112087113952,
+        "steps": 26101,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.8553786152036,
+        "lci": 1083.7259068885846,
+        "uci": 1257.3817848371766,
+        "steps": 26201,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.894286738584,
+        "lci": 1083.750093601125,
+        "uci": 1257.4507780644597,
+        "steps": 26301,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.9322701887959,
+        "lci": 1083.7737059076042,
+        "uci": 1257.5182236541475,
+        "steps": 26401,
+        "interpolated": true
+      },
+      {
+        "richness": 1168.969350941211,
+        "lci": 1083.796757572817,
+        "uci": 1257.5841560889473,
+        "steps": 26501,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.0055504489435,
+        "lci": 1083.8192620268467,
+        "uci": 1257.648609090324,
+        "steps": 26601,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.0408896552633,
+        "lci": 1083.8412323733878,
+        "uci": 1257.7116156350908,
+        "steps": 26701,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.0753890057115,
+        "lci": 1083.8626813978494,
+        "uci": 1257.7732079716452,
+        "steps": 26801,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.109068459929,
+        "lci": 1083.8836215752485,
+        "uci": 1257.833417635851,
+        "steps": 26901,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.1419475032058,
+        "lci": 1083.9040650779154,
+        "uci": 1257.8922754665934,
+        "steps": 27001,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.174045157752,
+        "lci": 1083.9240237829829,
+        "uci": 1257.9498116209845,
+        "steps": 27101,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.2053799937055,
+        "lci": 1083.9435092797048,
+        "uci": 1258.0060555892612,
+        "steps": 27201,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.2359701398736,
+        "lci": 1083.962532876568,
+        "uci": 1258.0610362093416,
+        "steps": 27301,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.2658332942228,
+        "lci": 1083.9811056082403,
+        "uci": 1258.1147816810903,
+        "steps": 27401,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.2949867341179,
+        "lci": 1083.9992382423338,
+        "uci": 1258.1673195802648,
+        "steps": 27501,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.323447326317,
+        "lci": 1084.0169412859939,
+        "uci": 1258.2186768721626,
+        "steps": 27601,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.3512315367302,
+        "lci": 1084.0342249923256,
+        "uci": 1258.2688799249795,
+        "steps": 27701,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.3783554399467,
+        "lci": 1084.0510993666571,
+        "uci": 1258.3179545228777,
+        "steps": 27801,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.4048347285338,
+        "lci": 1084.0675741726452,
+        "uci": 1258.3659258787757,
+        "steps": 27901,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.4306847221167,
+        "lci": 1084.083658938217,
+        "uci": 1258.4128186468554,
+        "steps": 28001,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.4559203762403,
+        "lci": 1084.0993629613765,
+        "uci": 1258.458656934808,
+        "steps": 28101,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.4805562910233,
+        "lci": 1084.1146953158513,
+        "uci": 1258.5034643158112,
+        "steps": 28201,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.5046067196045,
+        "lci": 1084.1296648566042,
+        "uci": 1258.5472638402487,
+        "steps": 28301,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.5280855763885,
+        "lci": 1084.144280225205,
+        "uci": 1258.5900780471795,
+        "steps": 28401,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.5510064450968,
+        "lci": 1084.1585498550603,
+        "uci": 1258.6319289755531,
+        "steps": 28501,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.573382586626,
+        "lci": 1084.172481976524,
+        "uci": 1258.6728381751905,
+        "steps": 28601,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.5952269467202,
+        "lci": 1084.1860846218694,
+        "uci": 1258.712826717523,
+        "steps": 28701,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.6165521634605,
+        "lci": 1084.1993656301343,
+        "uci": 1258.7519152060959,
+        "steps": 28801,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.637370574577,
+        "lci": 1084.2123326518586,
+        "uci": 1258.7901237868552,
+        "steps": 28901,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.6576942245874,
+        "lci": 1084.2249931536894,
+        "uci": 1258.8274721582022,
+        "steps": 29001,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.6775348717638,
+        "lci": 1084.2373544228694,
+        "uci": 1258.863979580828,
+        "steps": 29101,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.6969039949372,
+        "lci": 1084.24942357163,
+        "uci": 1258.8996648873492,
+        "steps": 29201,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.7158128001372,
+        "lci": 1084.2612075414556,
+        "uci": 1258.9345464917205,
+        "steps": 29301,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.7342722270764,
+        "lci": 1084.2727131072493,
+        "uci": 1258.9686423984476,
+        "steps": 29401,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.7522929554789,
+        "lci": 1084.2839468813977,
+        "uci": 1259.0019702116049,
+        "steps": 29501,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.769885411259,
+        "lci": 1084.2949153177267,
+        "uci": 1259.034547143649,
+        "steps": 29601,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.7870597725537,
+        "lci": 1084.3056247153665,
+        "uci": 1259.0663900240497,
+        "steps": 29701,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.8038259756104,
+        "lci": 1084.3160812225128,
+        "uci": 1259.0975153077245,
+        "steps": 29801,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.8201937205363,
+        "lci": 1084.3262908401007,
+        "uci": 1259.1279390832988,
+        "steps": 29901,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.8361724769109,
+        "lci": 1084.3362594253836,
+        "uci": 1259.1576770811787,
+        "steps": 30001,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.8517714892628,
+        "lci": 1084.3459926954242,
+        "uci": 1259.186744681453,
+        "steps": 30101,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.8669997824195,
+        "lci": 1084.3554962304975,
+        "uci": 1259.2151569216214,
+        "steps": 30201,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.8818661667292,
+        "lci": 1084.3647754774142,
+        "uci": 1259.2429285041555,
+        "steps": 30301,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.8963792431562,
+        "lci": 1084.3738357527532,
+        "uci": 1259.2700738038923,
+        "steps": 30401,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.9105474082587,
+        "lci": 1084.3826822460233,
+        "uci": 1259.2966068752717,
+        "steps": 30501,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.924378859046,
+        "lci": 1084.3913200227394,
+        "uci": 1259.3225414594106,
+        "steps": 30601,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.9378815977211,
+        "lci": 1084.399754027426,
+        "uci": 1259.3478909910257,
+        "steps": 30701,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.9510634363098,
+        "lci": 1084.4079890865469,
+        "uci": 1259.3726686052062,
+        "steps": 30801,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.963932001181,
+        "lci": 1084.4160299113594,
+        "uci": 1259.3968871440356,
+        "steps": 30901,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.9764947374583,
+        "lci": 1084.4238811007035,
+        "uci": 1259.4205591630728,
+        "steps": 31001,
+        "interpolated": true
+      },
+      {
+        "richness": 1169.9887589133286,
+        "lci": 1084.4315471437153,
+        "uci": 1259.443696937687,
+        "steps": 31101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.0007316242459,
+        "lci": 1084.4390324224787,
+        "uci": 1259.466312469258,
+        "steps": 31201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.0124197970363,
+        "lci": 1084.4463412146113,
+        "uci": 1259.488417491239,
+        "steps": 31301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.0238301939064,
+        "lci": 1084.4534776957842,
+        "uci": 1259.5100234750894,
+        "steps": 31401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.0349694163558,
+        "lci": 1084.4604459421803,
+        "uci": 1259.5311416360714,
+        "steps": 31501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.045843908995,
+        "lci": 1084.4672499328965,
+        "uci": 1259.5517829389303,
+        "steps": 31601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.056459963275,
+        "lci": 1084.4738935522798,
+        "uci": 1259.5719581034377,
+        "steps": 31701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.066823721127,
+        "lci": 1084.4803805922118,
+        "uci": 1259.5916776098247,
+        "steps": 31801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.0769411785159,
+        "lci": 1084.4867147543341,
+        "uci": 1259.61095170409,
+        "steps": 31901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.0868181889089,
+        "lci": 1084.4928996522226,
+        "uci": 1259.6297904031928,
+        "steps": 32001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.0964604666624,
+        "lci": 1084.4989388135018,
+        "uci": 1259.6482035001306,
+        "steps": 32101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1058735903282,
+        "lci": 1084.504835681915,
+        "uci": 1259.666200568909,
+        "steps": 32201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1150630058803,
+        "lci": 1084.5105936193388,
+        "uci": 1259.6837909693986,
+        "steps": 32301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1240340298664,
+        "lci": 1084.5162159077518,
+        "uci": 1259.7009838520898,
+        "steps": 32401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1327918524835,
+        "lci": 1084.5217057511509,
+        "uci": 1259.7177881627379,
+        "steps": 32501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1413415405802,
+        "lci": 1084.5270662774262,
+        "uci": 1259.73421264691,
+        "steps": 32601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1496880405894,
+        "lci": 1084.5323005401858,
+        "uci": 1259.750265854433,
+        "steps": 32701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1578361813888,
+        "lci": 1084.5374115205357,
+        "uci": 1259.7659561437354,
+        "steps": 32801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1657906770952,
+        "lci": 1084.5424021288218,
+        "uci": 1259.7812916861078,
+        "steps": 32901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.173556129792,
+        "lci": 1084.5472752063242,
+        "uci": 1259.7962804698564,
+        "steps": 33001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1811370321907,
+        "lci": 1084.5520335269098,
+        "uci": 1259.8109303043718,
+        "steps": 33101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.1885377702324,
+        "lci": 1084.5566797986503,
+        "uci": 1259.8252488241083,
+        "steps": 33201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.195762625623,
+        "lci": 1084.5612166653975,
+        "uci": 1259.8392434924763,
+        "steps": 33301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.202815778311,
+        "lci": 1084.565646708315,
+        "uci": 1259.8529216056397,
+        "steps": 33401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2097013089071,
+        "lci": 1084.5699724473839,
+        "uci": 1259.8662902962446,
+        "steps": 33501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.216423201043,
+        "lci": 1084.5741963428627,
+        "uci": 1259.8793565370554,
+        "steps": 33601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.222985343678,
+        "lci": 1084.5783207967147,
+        "uci": 1259.8921271445117,
+        "steps": 33701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.229391533347,
+        "lci": 1084.5823481540049,
+        "uci": 1259.904608782214,
+        "steps": 33801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2356454763599,
+        "lci": 1084.5862807042527,
+        "uci": 1259.9168079643207,
+        "steps": 33901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2417507909422,
+        "lci": 1084.5901206827643,
+        "uci": 1259.9287310588809,
+        "steps": 34001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2477110093319,
+        "lci": 1084.5938702719238,
+        "uci": 1259.9403842910883,
+        "steps": 34101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2535295798198,
+        "lci": 1084.5975316024576,
+        "uci": 1259.951773746465,
+        "steps": 34201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2592098687476,
+        "lci": 1084.6011067546656,
+        "uci": 1259.9629053739739,
+        "steps": 34301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2647551624532,
+        "lci": 1084.604597759625,
+        "uci": 1259.9737849890626,
+        "steps": 34401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.270168669173,
+        "lci": 1084.6080066003617,
+        "uci": 1259.98441827664,
+        "steps": 34501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.275453520898,
+        "lci": 1084.6113352129992,
+        "uci": 1259.9948107939902,
+        "steps": 34601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2806127751855,
+        "lci": 1084.6145854878712,
+        "uci": 1260.0049679736137,
+        "steps": 34701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2856494169287,
+        "lci": 1084.617759270619,
+        "uci": 1260.0148951260203,
+        "steps": 34801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2905663600827,
+        "lci": 1084.6208583632474,
+        "uci": 1260.02459744244,
+        "steps": 34901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.2953664493507,
+        "lci": 1084.6238845251705,
+        "uci": 1260.0340799974947,
+        "steps": 35001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3000524618305,
+        "lci": 1084.626839474221,
+        "uci": 1260.0433477517963,
+        "steps": 35101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3046271086205,
+        "lci": 1084.629724887643,
+        "uci": 1260.0524055544945,
+        "steps": 35201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3090930363876,
+        "lci": 1084.6325424030533,
+        "uci": 1260.0612581457633,
+        "steps": 35301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3134528289004,
+        "lci": 1084.6352936193875,
+        "uci": 1260.0699101592395,
+        "steps": 35401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.317709008522,
+        "lci": 1084.6379800978148,
+        "uci": 1260.0783661243963,
+        "steps": 35501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.32186403767,
+        "lci": 1084.6406033626427,
+        "uci": 1260.086630468879,
+        "steps": 35601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.325920320242,
+        "lci": 1084.6431649021847,
+        "uci": 1260.0947075207735,
+        "steps": 35701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3298802030051,
+        "lci": 1084.6456661696213,
+        "uci": 1260.1026015108353,
+        "steps": 35801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3337459769543,
+        "lci": 1084.6481085838316,
+        "uci": 1260.1103165746651,
+        "steps": 35901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.337519878638,
+        "lci": 1084.650493530206,
+        "uci": 1260.1178567548354,
+        "steps": 36001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3412040914513,
+        "lci": 1084.652822361446,
+        "uci": 1260.1252260029728,
+        "steps": 36101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3448007469003,
+        "lci": 1084.6550963983345,
+        "uci": 1260.1324281817904,
+        "steps": 36201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3483119258344,
+        "lci": 1084.6573169304972,
+        "uci": 1260.1394670670797,
+        "steps": 36301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3517396596503,
+        "lci": 1084.6594852171384,
+        "uci": 1260.1463463496532,
+        "steps": 36401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3550859314678,
+        "lci": 1084.661602487763,
+        "uci": 1260.1530696372458,
+        "steps": 36501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3583526772763,
+        "lci": 1084.6636699428836,
+        "uci": 1260.159640456379,
+        "steps": 36601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.361541787056,
+        "lci": 1084.6656887547035,
+        "uci": 1260.166062254173,
+        "steps": 36701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3646551058698,
+        "lci": 1084.6676600677877,
+        "uci": 1260.172338400128,
+        "steps": 36801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3676944349324,
+        "lci": 1084.6695849997218,
+        "uci": 1260.1784721878635,
+        "steps": 36901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3706615326512,
+        "lci": 1084.6714646417468,
+        "uci": 1260.1844668368162,
+        "steps": 37001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3735581156443,
+        "lci": 1084.6733000593833,
+        "uci": 1260.190325493901,
+        "steps": 37101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3763858597333,
+        "lci": 1084.6750922930455,
+        "uci": 1260.19605123514,
+        "steps": 37201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3791464009128,
+        "lci": 1084.6768423586257,
+        "uci": 1260.2016470672456,
+        "steps": 37301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3818413362978,
+        "lci": 1084.6785512480851,
+        "uci": 1260.2071159291802,
+        "steps": 37401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.384472225046,
+        "lci": 1084.680219930014,
+        "uci": 1260.2124606936704,
+        "steps": 37501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3870405892615,
+        "lci": 1084.6818493501837,
+        "uci": 1260.2176841686926,
+        "steps": 37601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3895479148744,
+        "lci": 1084.683440432091,
+        "uci": 1260.222789098928,
+        "steps": 37701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.391995652501,
+        "lci": 1084.6849940774807,
+        "uci": 1260.2277781671787,
+        "steps": 37801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.394385218283,
+        "lci": 1084.6865111668633,
+        "uci": 1260.2326539957598,
+        "steps": 37901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.396717994707,
+        "lci": 1084.6879925600128,
+        "uci": 1260.2374191478502,
+        "steps": 38001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.3989953314028,
+        "lci": 1084.6894390964599,
+        "uci": 1260.2420761288263,
+        "steps": 38101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.401218545927,
+        "lci": 1084.6908515959703,
+        "uci": 1260.246627387556,
+        "steps": 38201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.403388924523,
+        "lci": 1084.6922308590101,
+        "uci": 1260.2510753176662,
+        "steps": 38301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4055077228657,
+        "lci": 1084.6935776672033,
+        "uci": 1260.2554222587858,
+        "steps": 38401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4075761667884,
+        "lci": 1084.694892783773,
+        "uci": 1260.259670497753,
+        "steps": 38501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4095954529923,
+        "lci": 1084.696176953982,
+        "uci": 1260.2638222698076,
+        "steps": 38601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4115667497379,
+        "lci": 1084.697430905553,
+        "uci": 1260.267879759746,
+        "steps": 38701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.413491197521,
+        "lci": 1084.6986553490815,
+        "uci": 1260.2718451030519,
+        "steps": 38801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4153699097333,
+        "lci": 1084.6998509784444,
+        "uci": 1260.27572038701,
+        "steps": 38901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4172039733062,
+        "lci": 1084.7010184711894,
+        "uci": 1260.2795076517834,
+        "steps": 39001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4189944493392,
+        "lci": 1084.7021584889246,
+        "uci": 1260.2832088914768,
+        "steps": 39101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4207423737146,
+        "lci": 1084.703271677692,
+        "uci": 1260.2868260551681,
+        "steps": 39201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.422448757696,
+        "lci": 1084.7043586683362,
+        "uci": 1260.2903610479239,
+        "steps": 39301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4241145885142,
+        "lci": 1084.7054200768614,
+        "uci": 1260.2938157317865,
+        "steps": 39401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4257408299375,
+        "lci": 1084.7064565047808,
+        "uci": 1260.2971919267402,
+        "steps": 39501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4273284228298,
+        "lci": 1084.7074685394632,
+        "uci": 1260.3004914116625,
+        "steps": 39601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4288782856952,
+        "lci": 1084.7084567544584,
+        "uci": 1260.3037159252415,
+        "steps": 39701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4303913152082,
+        "lci": 1084.7094217098297,
+        "uci": 1260.3068671668848,
+        "steps": 39801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4318683867343,
+        "lci": 1084.7103639524703,
+        "uci": 1260.3099467976035,
+        "steps": 39901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4333103548352,
+        "lci": 1084.7112840164095,
+        "uci": 1260.3129564408703,
+        "steps": 40001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.434718053763,
+        "lci": 1084.7121824231235,
+        "uci": 1260.3158976834732,
+        "steps": 40101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4360922979436,
+        "lci": 1084.713059681822,
+        "uci": 1260.3187720763299,
+        "steps": 40201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4374338824477,
+        "lci": 1084.7139162897438,
+        "uci": 1260.3215811353064,
+        "steps": 40301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4387435834508,
+        "lci": 1084.7147527324405,
+        "uci": 1260.3243263420015,
+        "steps": 40401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4400221586818,
+        "lci": 1084.7155694840403,
+        "uci": 1260.3270091445115,
+        "steps": 40501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4412703478622,
+        "lci": 1084.7163670075336,
+        "uci": 1260.3296309581992,
+        "steps": 40601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4424888731332,
+        "lci": 1084.7171457550194,
+        "uci": 1260.3321931664161,
+        "steps": 40701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4436784394743,
+        "lci": 1084.717906167973,
+        "uci": 1260.3346971212336,
+        "steps": 40801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4448397351102,
+        "lci": 1084.7186486774913,
+        "uci": 1260.3371441441432,
+        "steps": 40901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4459734319103,
+        "lci": 1084.7193737045359,
+        "uci": 1260.3395355267442,
+        "steps": 41001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.447080185776,
+        "lci": 1084.7200816601762,
+        "uci": 1260.3418725314223,
+        "steps": 41101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4481606370214,
+        "lci": 1084.7207729458175,
+        "uci": 1260.344156392002,
+        "steps": 41201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4492154107425,
+        "lci": 1084.7214479534316,
+        "uci": 1260.3463883143947,
+        "steps": 41301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.45024511718,
+        "lci": 1084.7221070657772,
+        "uci": 1260.3485694772253,
+        "steps": 41401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.451250352072,
+        "lci": 1084.7227506566178,
+        "uci": 1260.3507010324483,
+        "steps": 41501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4522316969983,
+        "lci": 1084.7233790909327,
+        "uci": 1260.3527841059488,
+        "steps": 41601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4531897197173,
+        "lci": 1084.7239927251214,
+        "uci": 1260.3548197981288,
+        "steps": 41701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.454124974494,
+        "lci": 1084.7245919072116,
+        "uci": 1260.356809184486,
+        "steps": 41801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4550380024216,
+        "lci": 1084.7251769770494,
+        "uci": 1260.358753316171,
+        "steps": 41901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.455929331733,
+        "lci": 1084.725748266494,
+        "uci": 1260.3606532205367,
+        "steps": 42001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4567994781082,
+        "lci": 1084.7263060996097,
+        "uci": 1260.3625099016808,
+        "steps": 42101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4576489449714,
+        "lci": 1084.7268507928422,
+        "uci": 1260.364324340962,
+        "steps": 42201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4584782237825,
+        "lci": 1084.7273826552014,
+        "uci": 1260.3660974975185,
+        "steps": 42301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.459287794322,
+        "lci": 1084.7279019884386,
+        "uci": 1260.3678303087693,
+        "steps": 42401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4600781249678,
+        "lci": 1084.7284090872108,
+        "uci": 1260.3695236909005,
+        "steps": 42501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.460849672967,
+        "lci": 1084.728904239254,
+        "uci": 1260.3711785393493,
+        "steps": 42601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.461602884699,
+        "lci": 1084.7293877255427,
+        "uci": 1260.3727957292695,
+        "steps": 42701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.462338195936,
+        "lci": 1084.729859820448,
+        "uci": 1260.3743761159894,
+        "steps": 42801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4630560320927,
+        "lci": 1084.7303207918949,
+        "uci": 1260.3759205354597,
+        "steps": 42901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4637568084745,
+        "lci": 1084.730770901514,
+        "uci": 1260.377429804693,
+        "steps": 43001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.464440930516,
+        "lci": 1084.731210404786,
+        "uci": 1260.3789047221871,
+        "steps": 43101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4651087940174,
+        "lci": 1084.731639551191,
+        "uci": 1260.3803460683484,
+        "steps": 43201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4657607853715,
+        "lci": 1084.7320585843465,
+        "uci": 1260.3817546058963,
+        "steps": 43301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4663972817889,
+        "lci": 1084.732467742145,
+        "uci": 1260.383131080264,
+        "steps": 43401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4670186515152,
+        "lci": 1084.7328672568906,
+        "uci": 1260.3844762199906,
+        "steps": 43501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4676252540448,
+        "lci": 1084.7332573554286,
+        "uci": 1260.3857907370996,
+        "steps": 43601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4682174403283,
+        "lci": 1084.7336382592734,
+        "uci": 1260.387075327475,
+        "steps": 43701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4687955529757,
+        "lci": 1084.7340101847358,
+        "uci": 1260.3883306712244,
+        "steps": 43801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.469359926455,
+        "lci": 1084.734373343043,
+        "uci": 1260.3895574330359,
+        "steps": 43901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4699108872846,
+        "lci": 1084.734727940461,
+        "uci": 1260.3907562625277,
+        "steps": 44001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4704487542244,
+        "lci": 1084.735074178407,
+        "uci": 1260.3919277945863,
+        "steps": 44101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4709738384574,
+        "lci": 1084.7354122535676,
+        "uci": 1260.3930726497028,
+        "steps": 44201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.471486443772,
+        "lci": 1084.7357423580056,
+        "uci": 1260.394191434294,
+        "steps": 44301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4719868667364,
+        "lci": 1084.7360646792715,
+        "uci": 1260.3952847410235,
+        "steps": 44401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4724753968712,
+        "lci": 1084.7363794005114,
+        "uci": 1260.3963531491152,
+        "steps": 44501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4729523168157,
+        "lci": 1084.736686700564,
+        "uci": 1260.39739722465,
+        "steps": 44601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4734179024929,
+        "lci": 1084.7369867540692,
+        "uci": 1260.3984175208716,
+        "steps": 44701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4738724232677,
+        "lci": 1084.7372797315595,
+        "uci": 1260.399414578468,
+        "steps": 44801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4743161421038,
+        "lci": 1084.737565799565,
+        "uci": 1260.4003889258652,
+        "steps": 44901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4747493157151,
+        "lci": 1084.737845120697,
+        "uci": 1260.4013410794942,
+        "steps": 45001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.475172194715,
+        "lci": 1084.7381178537512,
+        "uci": 1260.4022715440726,
+        "steps": 45101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4755850237607,
+        "lci": 1084.7383841537862,
+        "uci": 1260.4031808128602,
+        "steps": 45201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4759880416946,
+        "lci": 1084.7386441722215,
+        "uci": 1260.4040693679265,
+        "steps": 45301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4763814816833,
+        "lci": 1084.738898056916,
+        "uci": 1260.4049376803982,
+        "steps": 45401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4767655713524,
+        "lci": 1084.7391459522532,
+        "uci": 1260.4057862107084,
+        "steps": 45501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4771405329168,
+        "lci": 1084.7393879992244,
+        "uci": 1260.4066154088403,
+        "steps": 45601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4775065833114,
+        "lci": 1084.7396243355079,
+        "uci": 1260.4074257145624,
+        "steps": 45701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.477863934315,
+        "lci": 1084.7398550955459,
+        "uci": 1260.4082175576598,
+        "steps": 45801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4782127926737,
+        "lci": 1084.7400804106214,
+        "uci": 1260.4089913581604,
+        "steps": 45901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4785533602194,
+        "lci": 1084.7403004089288,
+        "uci": 1260.4097475265537,
+        "steps": 46001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4788858339882,
+        "lci": 1084.7405152156548,
+        "uci": 1260.4104864640121,
+        "steps": 46101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.479210406333,
+        "lci": 1084.7407249530384,
+        "uci": 1260.411208562596,
+        "steps": 46201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4795272650363,
+        "lci": 1084.7409297404495,
+        "uci": 1260.4119142054637,
+        "steps": 46301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.479836593416,
+        "lci": 1084.7411296944492,
+        "uci": 1260.4126037670724,
+        "steps": 46401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.480138570435,
+        "lci": 1084.7413249288625,
+        "uci": 1260.4132776133747,
+        "steps": 46501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4804333708023,
+        "lci": 1084.7415155548342,
+        "uci": 1260.4139361020111,
+        "steps": 46601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.480721165075,
+        "lci": 1084.7417016809004,
+        "uci": 1260.414579582499,
+        "steps": 46701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4810021197572,
+        "lci": 1084.7418834130428,
+        "uci": 1260.4152083964163,
+        "steps": 46801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.481276397395,
+        "lci": 1084.7420608547536,
+        "uci": 1260.4158228775818,
+        "steps": 46901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4815441566727,
+        "lci": 1084.7422341070915,
+        "uci": 1260.4164233522301,
+        "steps": 47001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4818055525022,
+        "lci": 1084.742403268739,
+        "uci": 1260.4170101391844,
+        "steps": 47101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4820607361146,
+        "lci": 1084.7425684360594,
+        "uci": 1260.4175835500246,
+        "steps": 47201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4823098551467,
+        "lci": 1084.7427297031495,
+        "uci": 1260.41814388925,
+        "steps": 47301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4825530537266,
+        "lci": 1084.7428871618931,
+        "uci": 1260.4186914544396,
+        "steps": 47401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.482790472557,
+        "lci": 1084.7430409020158,
+        "uci": 1260.4192265364138,
+        "steps": 47501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4830222489973,
+        "lci": 1084.7431910111322,
+        "uci": 1260.4197494193809,
+        "steps": 47601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4832485171414,
+        "lci": 1084.7433375747962,
+        "uci": 1260.4202603810907,
+        "steps": 47701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4834694078975,
+        "lci": 1084.743480676551,
+        "uci": 1260.4207596929807,
+        "steps": 47801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.483685049062,
+        "lci": 1084.7436203979744,
+        "uci": 1260.421247620319,
+        "steps": 47901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4838955653945,
+        "lci": 1084.7437568187265,
+        "uci": 1260.4217244223435,
+        "steps": 48001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4841010786895,
+        "lci": 1084.743890016593,
+        "uci": 1260.4221903523978,
+        "steps": 48101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4843017078465,
+        "lci": 1084.7440200675312,
+        "uci": 1260.4226456580698,
+        "steps": 48201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4844975689405,
+        "lci": 1084.7441470457122,
+        "uci": 1260.4230905813158,
+        "steps": 48301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4846887752865,
+        "lci": 1084.744271023561,
+        "uci": 1260.423525358591,
+        "steps": 48401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4848754375075,
+        "lci": 1084.7443920718013,
+        "uci": 1260.423950220977,
+        "steps": 48501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4850576635972,
+        "lci": 1084.744510259492,
+        "uci": 1260.4243653942992,
+        "steps": 48601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4852355589828,
+        "lci": 1084.7446256540668,
+        "uci": 1260.424771099247,
+        "steps": 48701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4854092265855,
+        "lci": 1084.7447383213744,
+        "uci": 1260.4251675514934,
+        "steps": 48801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4855787668812,
+        "lci": 1084.7448483257149,
+        "uci": 1260.4255549618063,
+        "steps": 48901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4857442779576,
+        "lci": 1084.7449557298744,
+        "uci": 1260.4259335361594,
+        "steps": 49001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4859058555712,
+        "lci": 1084.7450605951622,
+        "uci": 1260.4263034758426,
+        "steps": 49101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4860635932032,
+        "lci": 1084.745162981446,
+        "uci": 1260.4266649775673,
+        "steps": 49201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4862175821127,
+        "lci": 1084.7452629471827,
+        "uci": 1260.4270182335695,
+        "steps": 49301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4863679113903,
+        "lci": 1084.7453605494582,
+        "uci": 1260.4273634317155,
+        "steps": 49401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.486514668009,
+        "lci": 1084.7454558440106,
+        "uci": 1260.4277007555947,
+        "steps": 49501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.486657936875,
+        "lci": 1084.7455488852677,
+        "uci": 1260.428030384621,
+        "steps": 49601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.486797800877,
+        "lci": 1084.7456397263775,
+        "uci": 1260.4283524941275,
+        "steps": 49701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4869343409332,
+        "lci": 1084.7457284192371,
+        "uci": 1260.4286672554579,
+        "steps": 49801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4870676360392,
+        "lci": 1084.7458150145214,
+        "uci": 1260.4289748360566,
+        "steps": 49901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.487197763313,
+        "lci": 1084.7458995617137,
+        "uci": 1260.4292753995596,
+        "steps": 50001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4873247980395,
+        "lci": 1084.7459821091313,
+        "uci": 1260.429569105878,
+        "steps": 50101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4874488137152,
+        "lci": 1084.746062703955,
+        "uci": 1260.4298561112844,
+        "steps": 50201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4875698820897,
+        "lci": 1084.7461413922565,
+        "uci": 1260.4301365684976,
+        "steps": 50301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.487688073207,
+        "lci": 1084.7462182190188,
+        "uci": 1260.430410626755,
+        "steps": 50401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4878034554467,
+        "lci": 1084.7462932281708,
+        "uci": 1260.4306784319047,
+        "steps": 50501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4879160955634,
+        "lci": 1084.7463664626048,
+        "uci": 1260.430940126471,
+        "steps": 50601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.488026058725,
+        "lci": 1084.7464379642026,
+        "uci": 1260.4311958497344,
+        "steps": 50701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.488133408551,
+        "lci": 1084.7465077738625,
+        "uci": 1260.4314457378077,
+        "steps": 50801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.488238207149,
+        "lci": 1084.7465759315173,
+        "uci": 1260.431689923703,
+        "steps": 50901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4883405151497,
+        "lci": 1084.7466424761596,
+        "uci": 1260.4319285374045,
+        "steps": 51001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.488440391744,
+        "lci": 1084.7467074458677,
+        "uci": 1260.4321617059409,
+        "steps": 51101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4885378947158,
+        "lci": 1084.7467708778172,
+        "uci": 1260.4323895534435,
+        "steps": 51201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4886330804752,
+        "lci": 1084.746832808312,
+        "uci": 1260.4326122012224,
+        "steps": 51301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.488726004092,
+        "lci": 1084.7468932728011,
+        "uci": 1260.432829767823,
+        "steps": 51401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4888167193276,
+        "lci": 1084.7469523058971,
+        "uci": 1260.4330423690928,
+        "steps": 51501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4889052786652,
+        "lci": 1084.7470099413986,
+        "uci": 1260.4332501182419,
+        "steps": 51601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.488991733341,
+        "lci": 1084.7470662123067,
+        "uci": 1260.4334531259012,
+        "steps": 51701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4890761333731,
+        "lci": 1084.747121150846,
+        "uci": 1260.433651500183,
+        "steps": 51801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4891585275918,
+        "lci": 1084.7471747884829,
+        "uci": 1260.4338453467392,
+        "steps": 51901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4892389636661,
+        "lci": 1084.747227155941,
+        "uci": 1260.4340347688133,
+        "steps": 52001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4893174881324,
+        "lci": 1084.7472782832197,
+        "uci": 1260.4342198672982,
+        "steps": 52101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.489394146421,
+        "lci": 1084.7473281996138,
+        "uci": 1260.4344007407904,
+        "steps": 52201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.489468982883,
+        "lci": 1084.7473769337257,
+        "uci": 1260.4345774856395,
+        "steps": 52301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4895420408147,
+        "lci": 1084.7474245134858,
+        "uci": 1260.4347501960012,
+        "steps": 52401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4896133624843,
+        "lci": 1084.7474709661633,
+        "uci": 1260.434918963885,
+        "steps": 52501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4896829891545,
+        "lci": 1084.747516318388,
+        "uci": 1260.4350838792072,
+        "steps": 52601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4897509611085,
+        "lci": 1084.7475605961608,
+        "uci": 1260.4352450298345,
+        "steps": 52701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4898173176712,
+        "lci": 1084.7476038248697,
+        "uci": 1260.4354025016314,
+        "steps": 52801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.489882097233,
+        "lci": 1084.7476460293042,
+        "uci": 1260.4355563785075,
+        "steps": 52901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4899453372727,
+        "lci": 1084.7476872336697,
+        "uci": 1260.43570674246,
+        "steps": 53001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.490007074378,
+        "lci": 1084.7477274616012,
+        "uci": 1260.4358536736188,
+        "steps": 53101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4900673442662,
+        "lci": 1084.7477667361763,
+        "uci": 1260.435997250287,
+        "steps": 53201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4901261818075,
+        "lci": 1084.7478050799286,
+        "uci": 1260.4361375489846,
+        "steps": 53301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4901836210418,
+        "lci": 1084.7478425148606,
+        "uci": 1260.4362746444879,
+        "steps": 53401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4902396952007,
+        "lci": 1084.7478790624561,
+        "uci": 1260.4364086098694,
+        "steps": 53501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.490294436726,
+        "lci": 1084.7479147436914,
+        "uci": 1260.4365395165357,
+        "steps": 53601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4903478772885,
+        "lci": 1084.74794957905,
+        "uci": 1260.4366674342682,
+        "steps": 53701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4904000478066,
+        "lci": 1084.7479835885304,
+        "uci": 1260.4367924312553,
+        "steps": 53801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.490450978463,
+        "lci": 1084.7480167916601,
+        "uci": 1260.4369145741332,
+        "steps": 53901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4905006987244,
+        "lci": 1084.7480492075078,
+        "uci": 1260.4370339280208,
+        "steps": 54001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.490549237356,
+        "lci": 1084.7480808546898,
+        "uci": 1260.4371505565498,
+        "steps": 54101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.49059662244,
+        "lci": 1084.7481117513846,
+        "uci": 1260.4372645219032,
+        "steps": 54201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4906428813913,
+        "lci": 1084.7481419153428,
+        "uci": 1260.4373758848483,
+        "steps": 54301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4906880409728,
+        "lci": 1084.7481713638927,
+        "uci": 1260.4374847047627,
+        "steps": 54401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4907321273117,
+        "lci": 1084.7482001139597,
+        "uci": 1260.4375910396775,
+        "steps": 54501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4907751659146,
+        "lci": 1084.7482281820648,
+        "uci": 1260.4376949462946,
+        "steps": 54601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.490817181681,
+        "lci": 1084.7482555843405,
+        "uci": 1260.4377964800262,
+        "steps": 54701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4908581989193,
+        "lci": 1084.7482823365403,
+        "uci": 1260.437895695022,
+        "steps": 54801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4908982413601,
+        "lci": 1084.7483084540436,
+        "uci": 1260.4379926441948,
+        "steps": 54901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4909373321702,
+        "lci": 1084.7483339518694,
+        "uci": 1260.4380873792543,
+        "steps": 55001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4909754939654,
+        "lci": 1084.7483588446794,
+        "uci": 1260.438179950728,
+        "steps": 55101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4910127488242,
+        "lci": 1084.7483831467919,
+        "uci": 1260.4382704079942,
+        "steps": 55201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491049118301,
+        "lci": 1084.748406872187,
+        "uci": 1260.4383587993054,
+        "steps": 55301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4910846234366,
+        "lci": 1084.7484300345116,
+        "uci": 1260.4384451718101,
+        "steps": 55401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491119284773,
+        "lci": 1084.748452647095,
+        "uci": 1260.438529571587,
+        "steps": 55501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4911531223634,
+        "lci": 1084.7484747229482,
+        "uci": 1260.4386120436598,
+        "steps": 55601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4911861557848,
+        "lci": 1084.7484962747776,
+        "uci": 1260.4386926320287,
+        "steps": 55701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4912184041486,
+        "lci": 1084.748517314987,
+        "uci": 1260.4387713796878,
+        "steps": 55801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491249886112,
+        "lci": 1084.7485378556912,
+        "uci": 1260.4388483286543,
+        "steps": 55901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491280619889,
+        "lci": 1084.7485579087154,
+        "uci": 1260.4389235199837,
+        "steps": 56001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491310623261,
+        "lci": 1084.7485774856061,
+        "uci": 1260.4389969937968,
+        "steps": 56101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491339913586,
+        "lci": 1084.7485965976384,
+        "uci": 1260.4390687892994,
+        "steps": 56201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4913685078102,
+        "lci": 1084.7486152558215,
+        "uci": 1260.4391389448047,
+        "steps": 56301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4913964224768,
+        "lci": 1084.748633470902,
+        "uci": 1260.4392074977477,
+        "steps": 56401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4914236737359,
+        "lci": 1084.7486512533756,
+        "uci": 1260.4392744847141,
+        "steps": 56501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4914502773536,
+        "lci": 1084.7486686134876,
+        "uci": 1260.439339941453,
+        "steps": 56601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4914762487215,
+        "lci": 1084.7486855612433,
+        "uci": 1260.4394039028987,
+        "steps": 56701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4915016028654,
+        "lci": 1084.7487021064107,
+        "uci": 1260.4394664031881,
+        "steps": 56801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491526354454,
+        "lci": 1084.748718258527,
+        "uci": 1260.4395274756805,
+        "steps": 56901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4915505178074,
+        "lci": 1084.7487340269038,
+        "uci": 1260.4395871529723,
+        "steps": 57001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4915741069053,
+        "lci": 1084.748749420634,
+        "uci": 1260.4396454669197,
+        "steps": 57101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491597135395,
+        "lci": 1084.7487644485943,
+        "uci": 1260.4397024486482,
+        "steps": 57201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4916196166,
+        "lci": 1084.7487791194517,
+        "uci": 1260.439758128576,
+        "steps": 57301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4916415635266,
+        "lci": 1084.7487934416686,
+        "uci": 1260.439812536426,
+        "steps": 57401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4916629888726,
+        "lci": 1084.7488074235089,
+        "uci": 1260.4398657012443,
+        "steps": 57501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491683905033,
+        "lci": 1084.7488210730378,
+        "uci": 1260.4399176514125,
+        "steps": 57601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4917043241094,
+        "lci": 1084.748834398133,
+        "uci": 1260.4399684146663,
+        "steps": 57701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491724257915,
+        "lci": 1084.7488474064849,
+        "uci": 1260.4400180181078,
+        "steps": 57801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4917437179827,
+        "lci": 1084.7488601056016,
+        "uci": 1260.4400664882214,
+        "steps": 57901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491762715571,
+        "lci": 1084.7488725028147,
+        "uci": 1260.4401138508865,
+        "steps": 58001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4917812616711,
+        "lci": 1084.7488846052813,
+        "uci": 1260.440160131392,
+        "steps": 58101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4917993670128,
+        "lci": 1084.7488964199906,
+        "uci": 1260.4402053544509,
+        "steps": 58201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491817042071,
+        "lci": 1084.7489079537652,
+        "uci": 1260.4402495442105,
+        "steps": 58301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4918342970718,
+        "lci": 1084.7489192132666,
+        "uci": 1260.4402927242677,
+        "steps": 58401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4918511419978,
+        "lci": 1084.7489302050003,
+        "uci": 1260.440334917682,
+        "steps": 58501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4918675865947,
+        "lci": 1084.7489409353163,
+        "uci": 1260.4403761469862,
+        "steps": 58601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4918836403767,
+        "lci": 1084.7489514104147,
+        "uci": 1260.4404164341984,
+        "steps": 58701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4918993126316,
+        "lci": 1084.7489616363496,
+        "uci": 1260.4404558008334,
+        "steps": 58801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4919146124266,
+        "lci": 1084.7489716190298,
+        "uci": 1260.4404942679166,
+        "steps": 58901,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4919295486136,
+        "lci": 1084.7489813642276,
+        "uci": 1260.4405318559932,
+        "steps": 59001,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4919441298339,
+        "lci": 1084.7489908775765,
+        "uci": 1260.440568585139,
+        "steps": 59101,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4919583645233,
+        "lci": 1084.7490001645776,
+        "uci": 1260.4406044749724,
+        "steps": 59201,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4919722609172,
+        "lci": 1084.7490092306011,
+        "uci": 1260.4406395446624,
+        "steps": 59301,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.491985827056,
+        "lci": 1084.749018080891,
+        "uci": 1260.4406738129426,
+        "steps": 59401,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4919990707876,
+        "lci": 1084.7490267205665,
+        "uci": 1260.440707298118,
+        "steps": 59501,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4920119997746,
+        "lci": 1084.7490351546255,
+        "uci": 1260.4407400180748,
+        "steps": 59601,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4920246214972,
+        "lci": 1084.7490433879484,
+        "uci": 1260.4407719902924,
+        "steps": 59701,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4920369432575,
+        "lci": 1084.7490514253002,
+        "uci": 1260.4408032318515,
+        "steps": 59801,
+        "interpolated": true
+      },
+      {
+        "richness": 1170.4920489721842,
+        "lci": 1084.7490592713316,
+        "uci": 1260.4408337594405,
+        "steps": 59901,
+        "interpolated": true
+      }
+    ],
+    "data-63219cfdf8db1ffb8c8a49d35913f0e3": [{"steps": 3648, "richness": 799}]
+  }
+}

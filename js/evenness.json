@@ -1,0 +1,1635 @@
+{
+    "config": {
+      "title": {"fontSize": 24, "font": "Lato"},
+      "axisX": {
+        "domainColor": "#000000",
+        "grid": false,
+        "labelFont": "Lato",
+        "labelFontSize": 18,
+        "titleFontWeight": 100,
+        "titleFont": "Lato",
+        "titleFontSize": 18,
+        "title": "X Axis Title (units)"
+      },
+      "axisY": {
+        "grid": false,
+        "labelFont": "Lato",
+        "labelFontSize": 18,
+        "titleFontWeight": 100,
+        "titleFont": "Lato",
+        "titleFontSize": 18,
+        "title": "Y Axis Title (units)"
+      },
+      "range": {
+        "category": [
+          "#AD3E37ff",
+          "#252825ff",
+          "#275474ff",
+          "#D3A346ff",
+          "#465F35ff",
+          "#8E8A87"
+        ],
+        "diverging": [
+          "#AD3E37ff",
+          "#252825ff",
+          "#275474ff",
+          "#D3A346ff",
+          "#465F35ff",
+          "#8E8A87"
+        ]
+      },
+      "legend": {
+        "labelFont": "Lato",
+        "labelFontSize": 18,
+        "titleFont": "Lato",
+        "titleFontSize": 18,
+        "title": "",
+        "orient": "top-left"
+      },
+      "view": {"stroke": "transparent"},
+      "background": "transparent",
+      "area": {"fill": "#9e403a"},
+      "line": {"color": "#9e403a", "stroke": "#9e403a"},
+      "point": {"filled": true},
+      "circle": {"color": "#9e403a"},
+      "text": {
+        "font": "Lato",
+        "color": "#9e403a",
+        "fontSize": 18,
+        "align": "right",
+        "fontWeight": 400,
+        "size": 18
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "color": {"field": "language", "legend": null, "type": "nominal"},
+          "x": {
+            "field": "q",
+            "scale": {"domain": [0, 3]},
+            "type": "quantitative",
+            "title": "q-values"
+          },
+          "y": {"field": "evenness", "title": "Evenness", "type": "quantitative"}
+        }
+      },
+      {
+        "mark": "point",
+        "encoding": {
+          "opacity": {"value": 0},
+          "x": {"field": "q", "type": "quantitative"}
+        },
+        "selection": {
+          "selector062": {
+            "type": "single",
+            "nearest": true,
+            "on": "mouseover",
+            "fields": ["q"],
+            "init": {"q": 1},
+            "empty": "none"
+          }
+        }
+      },
+      {
+        "mark": {"type": "rule", "color": "gray"},
+        "encoding": {"x": {"field": "q", "type": "quantitative"}},
+        "transform": [{"filter": {"selection": "selector062"}}]
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "clip": false,
+          "font": "Montserrat",
+          "fontSize": 12,
+          "fontStyle": "small-caps"
+        },
+        "encoding": {
+          "color": {
+            "field": "language",
+            "legend": null,
+            "scale": {
+              "domain": [
+                "French",
+                "English",
+                "German",
+                "Dutch",
+                "Irish",
+                "Icelandic"
+              ],
+              "type": "ordinal"
+            },
+            "type": "nominal"
+          },
+          "text": {
+            "condition": {
+              "field": "le",
+              "type": "nominal",
+              "selection": "selector062"
+            },
+            "value": " "
+          },
+          "x": {"field": "pos_x", "type": "quantitative"},
+          "y": {"field": "pos_y", "type": "quantitative"}
+        }
+      }
+    ],
+    "data": {"name": "data-7165fa230db02d60d6b20130b3815d81"},
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+    "width": "container",
+    "height": 300,
+    "datasets": {
+      "data-7165fa230db02d60d6b20130b3815d81": [
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0,
+          "evenness": 1,
+          "le": "Dutch: 1.00"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.1,
+          "evenness": 0.9564359363906758,
+          "le": "Dutch: 0.96"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.2,
+          "evenness": 0.9109404566628236,
+          "le": "Dutch: 0.91"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.30000000000000004,
+          "evenness": 0.8637925866084887,
+          "le": "Dutch: 0.86"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.4,
+          "evenness": 0.8153743580744067,
+          "le": "Dutch: 0.82"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.5,
+          "evenness": 0.7661705359559998,
+          "le": "Dutch: 0.77"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.6000000000000001,
+          "evenness": 0.7167570144913475,
+          "le": "Dutch: 0.72"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.7000000000000001,
+          "evenness": 0.6677758822278904,
+          "le": "Dutch: 0.67"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.8,
+          "evenness": 0.6198975347132482,
+          "le": "Dutch: 0.62"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 0.9,
+          "evenness": 0.5737734739264776,
+          "le": "Dutch: 0.57"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1,
+          "evenness": 0.5299866173154627,
+          "le": "Dutch: 0.53"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.1,
+          "evenness": 0.48900770904651225,
+          "le": "Dutch: 0.49"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.2000000000000002,
+          "evenness": 0.4511657237255665,
+          "le": "Dutch: 0.45"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.3,
+          "evenness": 0.4166369238775276,
+          "le": "Dutch: 0.42"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.4000000000000001,
+          "evenness": 0.3854526359484637,
+          "le": "Dutch: 0.39"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.5,
+          "evenness": 0.3575216381118216,
+          "le": "Dutch: 0.36"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.6,
+          "evenness": 0.3326607372719004,
+          "le": "Dutch: 0.33"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.7000000000000002,
+          "evenness": 0.31062704172999867,
+          "le": "Dutch: 0.31"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.8,
+          "evenness": 0.29114700953947387,
+          "le": "Dutch: 0.29"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 1.9000000000000001,
+          "evenness": 0.27393955208959075,
+          "le": "Dutch: 0.27"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2,
+          "evenness": 0.25873244517829896,
+          "le": "Dutch: 0.26"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.1,
+          "evenness": 0.24527262572732633,
+          "le": "Dutch: 0.25"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.2,
+          "evenness": 0.23333159862285,
+          "le": "Dutch: 0.23"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.3000000000000003,
+          "evenness": 0.22270731867234103,
+          "le": "Dutch: 0.22"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.4000000000000004,
+          "evenness": 0.21322376458524658,
+          "le": "Dutch: 0.21"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.5,
+          "evenness": 0.20472915828550736,
+          "le": "Dutch: 0.20"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.6,
+          "evenness": 0.1970935100086401,
+          "le": "Dutch: 0.20"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.7,
+          "evenness": 0.1902059379463204,
+          "le": "Dutch: 0.19"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.8000000000000003,
+          "evenness": 0.18397203551209965,
+          "le": "Dutch: 0.18"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 2.9000000000000004,
+          "evenness": 0.17831143621528928,
+          "le": "Dutch: 0.18"
+        },
+        {
+          "language": "Dutch",
+          "pos_y": 0.55,
+          "pos_x": 3.1,
+          "q": 3,
+          "evenness": 0.17315564528904684,
+          "le": "Dutch: 0.17"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0,
+          "evenness": 1,
+          "le": "English: 1.00"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.1,
+          "evenness": 0.9315204546836551,
+          "le": "English: 0.93"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.2,
+          "evenness": 0.861703463546594,
+          "le": "English: 0.86"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.30000000000000004,
+          "evenness": 0.7914598965131998,
+          "le": "English: 0.79"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.4,
+          "evenness": 0.7218669665935192,
+          "le": "English: 0.72"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.5,
+          "evenness": 0.6541060653316239,
+          "le": "English: 0.65"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.6000000000000001,
+          "evenness": 0.5893677465809553,
+          "le": "English: 0.59"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.7000000000000001,
+          "evenness": 0.528736023679621,
+          "le": "English: 0.53"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.8,
+          "evenness": 0.47307488726587765,
+          "le": "English: 0.47"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 0.9,
+          "evenness": 0.42294429836196823,
+          "le": "English: 0.42"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1,
+          "evenness": 0.37856650152158233,
+          "le": "English: 0.38"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.1,
+          "evenness": 0.3398478675450611,
+          "le": "English: 0.34"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.2000000000000002,
+          "evenness": 0.30644420043634574,
+          "le": "English: 0.31"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.3,
+          "evenness": 0.27784704106679203,
+          "le": "English: 0.28"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.4000000000000001,
+          "evenness": 0.25346846305367016,
+          "le": "English: 0.25"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.5,
+          "evenness": 0.23270934831055665,
+          "le": "English: 0.23"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.6,
+          "evenness": 0.2150055345592928,
+          "le": "English: 0.22"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.7000000000000002,
+          "evenness": 0.19985331224611572,
+          "le": "English: 0.20"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.8,
+          "evenness": 0.18681920382048545,
+          "le": "English: 0.19"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 1.9000000000000001,
+          "evenness": 0.1755395370434163,
+          "le": "English: 0.18"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2,
+          "evenness": 0.16571438704262403,
+          "le": "English: 0.17"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.1,
+          "evenness": 0.15709908714699128,
+          "le": "English: 0.16"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.2,
+          "evenness": 0.14949527066712068,
+          "le": "English: 0.15"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.3000000000000003,
+          "evenness": 0.14274249723931734,
+          "le": "English: 0.14"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.4000000000000004,
+          "evenness": 0.1367109309384413,
+          "le": "English: 0.14"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.5,
+          "evenness": 0.13129519610747695,
+          "le": "English: 0.13"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.6,
+          "evenness": 0.1264093584342124,
+          "le": "English: 0.13"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.7,
+          "evenness": 0.12198289906384083,
+          "le": "English: 0.12"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.8000000000000003,
+          "evenness": 0.11795752499746937,
+          "le": "English: 0.12"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 2.9000000000000004,
+          "evenness": 0.11428466282423344,
+          "le": "English: 0.11"
+        },
+        {
+          "language": "English",
+          "pos_y": 0.35,
+          "pos_x": 3.1,
+          "q": 3,
+          "evenness": 0.11092349940876489,
+          "le": "English: 0.11"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0,
+          "evenness": 1,
+          "le": "French: 1.00"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.1,
+          "evenness": 0.8780382749103024,
+          "le": "French: 0.88"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.2,
+          "evenness": 0.7663893203605151,
+          "le": "French: 0.77"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.30000000000000004,
+          "evenness": 0.6662705075161042,
+          "le": "French: 0.67"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.4,
+          "evenness": 0.5782987931004022,
+          "le": "French: 0.58"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.5,
+          "evenness": 0.5024389067990093,
+          "le": "French: 0.50"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.6000000000000001,
+          "evenness": 0.4380613803084193,
+          "le": "French: 0.44"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.7000000000000001,
+          "evenness": 0.3840911928794611,
+          "le": "French: 0.38"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.8,
+          "evenness": 0.3391996920877222,
+          "le": "French: 0.34"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 0.9,
+          "evenness": 0.30198761374419036,
+          "le": "French: 0.30"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1,
+          "evenness": 0.27112357772167756,
+          "le": "French: 0.27"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.1,
+          "evenness": 0.24542654060116834,
+          "le": "French: 0.25"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.2000000000000002,
+          "evenness": 0.22389922501266443,
+          "le": "French: 0.22"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.3,
+          "evenness": 0.20572770588918593,
+          "le": "French: 0.21"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.4000000000000001,
+          "evenness": 0.19026230558596618,
+          "le": "French: 0.19"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.5,
+          "evenness": 0.17699109087610543,
+          "le": "French: 0.18"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.6,
+          "evenness": 0.16551285948649683,
+          "le": "French: 0.17"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.7000000000000002,
+          "evenness": 0.15551305520839548,
+          "le": "French: 0.16"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.8,
+          "evenness": 0.14674384386827052,
+          "le": "French: 0.15"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 1.9000000000000001,
+          "evenness": 0.13900837784739378,
+          "le": "French: 0.14"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2,
+          "evenness": 0.1321487302098283,
+          "le": "French: 0.13"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.1,
+          "evenness": 0.1260368090767957,
+          "le": "French: 0.13"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.2,
+          "evenness": 0.12056758147452426,
+          "le": "French: 0.12"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.3000000000000003,
+          "evenness": 0.11565403279488003,
+          "le": "French: 0.12"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.4000000000000004,
+          "evenness": 0.11122340546816226,
+          "le": "French: 0.11"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.5,
+          "evenness": 0.10721436972682305,
+          "le": "French: 0.11"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.6,
+          "evenness": 0.10357487069370461,
+          "le": "French: 0.10"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.7,
+          "evenness": 0.10026046710303635,
+          "le": "French: 0.10"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.8000000000000003,
+          "evenness": 0.09723302999645876,
+          "le": "French: 0.10"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 2.9000000000000004,
+          "evenness": 0.09445970809321379,
+          "le": "French: 0.09"
+        },
+        {
+          "language": "French",
+          "pos_y": 0.25,
+          "pos_x": 3.1,
+          "q": 3,
+          "evenness": 0.09191209376129822,
+          "le": "French: 0.09"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0,
+          "evenness": 1,
+          "le": "German: 1.00"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.1,
+          "evenness": 0.9062676312489287,
+          "le": "German: 0.91"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.2,
+          "evenness": 0.8183211632946973,
+          "le": "German: 0.82"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.30000000000000004,
+          "evenness": 0.7369459032355685,
+          "le": "German: 0.74"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.4,
+          "evenness": 0.6627084545950618,
+          "le": "German: 0.66"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.5,
+          "evenness": 0.5959114735882639,
+          "le": "German: 0.60"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.6000000000000001,
+          "evenness": 0.5365786533809789,
+          "le": "German: 0.54"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.7000000000000001,
+          "evenness": 0.4844733628175427,
+          "le": "German: 0.48"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.8,
+          "evenness": 0.4391459750331092,
+          "le": "German: 0.44"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 0.9,
+          "evenness": 0.3999983949673811,
+          "le": "German: 0.40"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1,
+          "evenness": 0.3663521030016483,
+          "le": "German: 0.37"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.1,
+          "evenness": 0.3375082919730909,
+          "le": "German: 0.34"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.2000000000000002,
+          "evenness": 0.3127934910861469,
+          "le": "German: 0.31"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.3,
+          "evenness": 0.29158903466550534,
+          "le": "German: 0.29"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.4000000000000001,
+          "evenness": 0.2733462474849145,
+          "le": "German: 0.27"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.5,
+          "evenness": 0.25759087129925495,
+          "le": "German: 0.26"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.6,
+          "evenness": 0.24392045118732986,
+          "le": "German: 0.24"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.7000000000000002,
+          "evenness": 0.2319977901605244,
+          "le": "German: 0.23"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.8,
+          "evenness": 0.22154271034283815,
+          "le": "German: 0.22"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 1.9000000000000001,
+          "evenness": 0.21232354745513335,
+          "le": "German: 0.21"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2,
+          "evenness": 0.20414917999383625,
+          "le": "German: 0.20"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.1,
+          "evenness": 0.19686196897145578,
+          "le": "German: 0.20"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.2,
+          "evenness": 0.1903317225365215,
+          "le": "German: 0.19"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.3000000000000003,
+          "evenness": 0.18445065463521162,
+          "le": "German: 0.18"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.4000000000000004,
+          "evenness": 0.179129237296562,
+          "le": "German: 0.18"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.5,
+          "evenness": 0.1742928209255394,
+          "le": "German: 0.17"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.6,
+          "evenness": 0.16987889637476333,
+          "le": "German: 0.17"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.7,
+          "evenness": 0.16583488365729696,
+          "le": "German: 0.17"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.8000000000000003,
+          "evenness": 0.1621163478192887,
+          "le": "German: 0.16"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 2.9000000000000004,
+          "evenness": 0.158685558792807,
+          "le": "German: 0.16"
+        },
+        {
+          "language": "German",
+          "pos_y": 0.45,
+          "pos_x": 3.1,
+          "q": 3,
+          "evenness": 0.15551032712157173,
+          "le": "German: 0.16"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0,
+          "evenness": 1,
+          "le": "Icelandic: 1.00"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.1,
+          "evenness": 0.983198568028019,
+          "le": "Icelandic: 0.98"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.2,
+          "evenness": 0.9661813119602393,
+          "le": "Icelandic: 0.97"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.30000000000000004,
+          "evenness": 0.949010709204548,
+          "le": "Icelandic: 0.95"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.4,
+          "evenness": 0.9317536179518885,
+          "le": "Icelandic: 0.93"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.5,
+          "evenness": 0.9144800653550677,
+          "le": "Icelandic: 0.91"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.6000000000000001,
+          "evenness": 0.8972618486324674,
+          "le": "Icelandic: 0.90"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.7000000000000001,
+          "evenness": 0.8801710084728062,
+          "le": "Icelandic: 0.88"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.8,
+          "evenness": 0.8632782478463397,
+          "le": "Icelandic: 0.86"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 0.9,
+          "evenness": 0.8466513772435066,
+          "le": "Icelandic: 0.85"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1,
+          "evenness": 0.8303538680618339,
+          "le": "Icelandic: 0.83"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.1,
+          "evenness": 0.814443588940399,
+          "le": "Icelandic: 0.81"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.2000000000000002,
+          "evenness": 0.7989717859069092,
+          "le": "Icelandic: 0.80"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.3,
+          "evenness": 0.7839823480508893,
+          "le": "Icelandic: 0.78"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.4000000000000001,
+          "evenness": 0.7695113784240033,
+          "le": "Icelandic: 0.77"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.5,
+          "evenness": 0.75558706760855,
+          "le": "Icelandic: 0.76"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.6,
+          "evenness": 0.7422298475428765,
+          "le": "Icelandic: 0.74"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.7000000000000002,
+          "evenness": 0.7294527874787666,
+          "le": "Icelandic: 0.73"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.8,
+          "evenness": 0.7172621835461249,
+          "le": "Icelandic: 0.72"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 1.9000000000000001,
+          "evenness": 0.7056582885151217,
+          "le": "Icelandic: 0.71"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2,
+          "evenness": 0.6946361284924615,
+          "le": "Icelandic: 0.69"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.1,
+          "evenness": 0.6841863573357965,
+          "le": "Icelandic: 0.68"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.2,
+          "evenness": 0.6742961068522063,
+          "le": "Icelandic: 0.67"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.3000000000000003,
+          "evenness": 0.6649497985591498,
+          "le": "Icelandic: 0.66"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.4000000000000004,
+          "evenness": 0.6561298925394946,
+          "le": "Icelandic: 0.66"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.5,
+          "evenness": 0.6478175566271515,
+          "le": "Icelandic: 0.65"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.6,
+          "evenness": 0.639993246960239,
+          "le": "Icelandic: 0.64"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.7,
+          "evenness": 0.632637196988696,
+          "le": "Icelandic: 0.63"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.8000000000000003,
+          "evenness": 0.6257298168208489,
+          "le": "Icelandic: 0.63"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 2.9000000000000004,
+          "evenness": 0.6192520082482437,
+          "le": "Icelandic: 0.62"
+        },
+        {
+          "language": "Icelandic",
+          "pos_y": 0.75,
+          "pos_x": 3.1,
+          "q": 3,
+          "evenness": 0.6131854041908652,
+          "le": "Icelandic: 0.61"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0,
+          "evenness": 1,
+          "le": "Irish: 1.00"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.1,
+          "evenness": 0.9903030263174092,
+          "le": "Irish: 0.99"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.2,
+          "evenness": 0.9801521277557809,
+          "le": "Irish: 0.98"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.30000000000000004,
+          "evenness": 0.9695409940715077,
+          "le": "Irish: 0.97"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.4,
+          "evenness": 0.9584663762394897,
+          "le": "Irish: 0.96"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.5,
+          "evenness": 0.9469286018208382,
+          "le": "Irish: 0.95"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.6000000000000001,
+          "evenness": 0.9349320939664053,
+          "le": "Irish: 0.93"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.7000000000000001,
+          "evenness": 0.9224858739986074,
+          "le": "Irish: 0.92"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.8,
+          "evenness": 0.9096040230710324,
+          "le": "Irish: 0.91"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 0.9,
+          "evenness": 0.896306074527597,
+          "le": "Irish: 0.90"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1,
+          "evenness": 0.8826173058603822,
+          "le": "Irish: 0.88"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.1,
+          "evenness": 0.8685688982851368,
+          "le": "Irish: 0.87"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.2000000000000002,
+          "evenness": 0.8541979335505306,
+          "le": "Irish: 0.85"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.3,
+          "evenness": 0.839547202119504,
+          "le": "Irish: 0.84"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.4000000000000001,
+          "evenness": 0.8246648049187874,
+          "le": "Irish: 0.82"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.5,
+          "evenness": 0.8096035417176274,
+          "le": "Irish: 0.81"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.6,
+          "evenness": 0.7944200929495754,
+          "le": "Irish: 0.79"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.7000000000000002,
+          "evenness": 0.7791740168289696,
+          "le": "Irish: 0.78"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.8,
+          "evenness": 0.763926598628374,
+          "le": "Irish: 0.76"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 1.9000000000000001,
+          "evenness": 0.7487396021331072,
+          "le": "Irish: 0.75"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2,
+          "evenness": 0.7336739829528741,
+          "le": "Irish: 0.73"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.1,
+          "evenness": 0.7187886270111036,
+          "le": "Irish: 0.72"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.2,
+          "evenness": 0.7041391795717198,
+          "le": "Irish: 0.70"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.3000000000000003,
+          "evenness": 0.6897770168164751,
+          "le": "Irish: 0.69"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.4000000000000004,
+          "evenness": 0.675748408302635,
+          "le": "Irish: 0.68"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.5,
+          "evenness": 0.6620938970953749,
+          "le": "Irish: 0.66"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.6,
+          "evenness": 0.6488479110369185,
+          "le": "Irish: 0.65"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.7,
+          "evenness": 0.6360386016648067,
+          "le": "Irish: 0.64"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.8000000000000003,
+          "evenness": 0.623687893415028,
+          "le": "Irish: 0.62"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 2.9000000000000004,
+          "evenness": 0.6118117151584264,
+          "le": "Irish: 0.61"
+        },
+        {
+          "language": "Irish",
+          "pos_y": 0.65,
+          "pos_x": 3.1,
+          "q": 3,
+          "evenness": 0.6004203868853959,
+          "le": "Irish: 0.60"
+        }
+      ]
+    }
+  }

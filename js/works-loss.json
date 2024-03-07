@@ -1,0 +1,162 @@
+{
+  "config": {
+    "title": {
+      "fontSize": 16,
+      "font": "Montserrat",
+      "anchor": "end",
+      "color": "#9e403a",
+      "fontStyle": "small-caps",
+      "fontWeight": 700
+    },
+    "axisX": {
+      "domainColor": "#000000",
+      "grid": false,
+      "labelFont": "Lato",
+      "labelFontSize": 18,
+      "titleFontWeight": 100,
+      "titleFont": "Lato",
+      "titleFontSize": 18,
+      "title": "X Axis Title (units)"
+    },
+    "axisY": {
+      "grid": false,
+      "labelFont": "Lato",
+      "labelFontSize": 18,
+      "titleFontWeight": 100,
+      "titleFont": "Lato",
+      "titleFontSize": 18,
+      "title": "Y Axis Title (units)"
+    },
+    "range": {
+      "category": [
+        "#AD3E37ff",
+        "#252825ff",
+        "#275474ff",
+        "#D3A346ff",
+        "#465F35ff",
+        "#8E8A87"
+      ],
+      "diverging": [
+        "#AD3E37ff",
+        "#252825ff",
+        "#275474ff",
+        "#D3A346ff",
+        "#465F35ff",
+        "#8E8A87"
+      ]
+    },
+    "legend": {
+      "labelFont": "Lato",
+      "labelFontSize": 18,
+      "titleFont": "Lato",
+      "titleFontSize": 18,
+      "title": "",
+      "orient": "top-left"
+    },
+    "view": {"stroke": "transparent"},
+    "background": "transparent",
+    "area": {"fill": "#9e403a"},
+    "line": {"color": "#9e403a", "stroke": "#9e403a"},
+    "point": {"filled": true},
+    "circle": {"color": "#9e403a"},
+    "text": {
+      "font": "Lato",
+      "color": "#9e403a",
+      "fontSize": 18,
+      "align": "right",
+      "fontWeight": 400,
+      "size": 18
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "point", "color": "black", "filled": true, "size": 50},
+      "encoding": {
+        "x": {"field": "language", "type": "nominal"},
+        "y": {
+          "field": "mean",
+          "scale": {"align": 0, "base": 1},
+          "title": "Survival ratio",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": "errorbar",
+      "encoding": {
+        "tooltip": [
+          {"field": "language", "title": "Language", "type": "nominal"},
+          {
+            "field": "lci",
+            "format": ".2f",
+            "title": "Lower CI",
+            "type": "quantitative"
+          },
+          {
+            "field": "mean",
+            "format": ".2f",
+            "title": "Mean",
+            "type": "quantitative"
+          },
+          {
+            "field": "uci",
+            "format": ".2f",
+            "title": "Upper CI",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "language", "type": "nominal"},
+        "y": {
+          "field": "lci",
+          "title": "Survival ratio",
+          "type": "quantitative"
+        },
+        "y2": {"field": "uci"}
+      }
+    }
+  ],
+  "data": {"name": "data-e29ac4a1eceba3c36f5c3e867d412fb4"},
+  "title": "survival of works",
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-e29ac4a1eceba3c36f5c3e867d412fb4": [
+      {
+        "language": "Dutch",
+        "mean": 0.49206708975521307,
+        "lci": 0.34018751691840743,
+        "uci": 0.6856254834035058
+      },
+      {
+        "language": "English",
+        "mean": 0.38628718658300926,
+        "lci": 0.24397244219069839,
+        "uci": 0.5701793236745262
+      },
+      {
+        "language": "French",
+        "mean": 0.5352929043772545,
+        "lci": 0.43005204569846,
+        "uci": 0.6413062817262293
+      },
+      {
+        "language": "German",
+        "mean": 0.7897631083168776,
+        "lci": 0.6594188935324454,
+        "uci": 0.9184882985867096
+      },
+      {
+        "language": "Icelandic",
+        "mean": 0.7725105754381253,
+        "lci": 0.6443665190992424,
+        "uci": 0.9114701102807838
+      },
+      {
+        "language": "Irish",
+        "mean": 0.8103966923106464,
+        "lci": 0.7071785619977026,
+        "uci": 0.9190607377229909
+      }
+    ]
+  }
+}
