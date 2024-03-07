@@ -522,7 +522,8 @@ section .paper-card .paper-link {
   .background, .details-container, .video {
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-gap: 4em;
+    grid-gap: 2em;
+    align-items: center;
   }
 
   .details-container {
@@ -553,10 +554,6 @@ section .paper-card .paper-link {
   .right {
     margin-left: 2em;
     margin-top: 1em;
-  }
-
-  .right-logo {
-    grid-template-columns: 100%;
   }
 
   .left {

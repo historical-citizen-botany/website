@@ -550,13 +550,8 @@ section {
     .background, .details-container, .video {
         display: grid;
         grid-template-columns: 60% 40%;
-        grid-gap: 4em;
-
-        // .right-logo {
-        //     grid-column: 1 / -1;
-        //     max-width: 60%;
-            // margin: auto;
-        // }
+        grid-gap: 2em;
+        align-items: center;
     }
 
     .details-container {
@@ -589,10 +584,6 @@ section {
     .right {
         margin-left: 2em;
         margin-top: 1em;
-    }
-
-    .right-logo {
-        grid-template-columns: 100%;
     }
 
     .left {
