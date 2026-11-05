@@ -8,6 +8,7 @@
     <meta property="og:image" content="images/preview_image.jpg" />
     <title>Historical Citizen Botany</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/results.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -20,6 +21,7 @@
                 <ul>
                     <!-- <li><a href="#video">Video</a></li> -->
                     <li><a href="#details">Details</a></li>
+                    <li><a href="#results">Results</a></li>
                     <li><a href="#authors">Team</a></li>
                     <li><a href="mailto:folgert.karsdorp@meertens.knaw.nl?subject=Flora Batava">Contact</a></li>
                 </ul>
@@ -32,7 +34,8 @@
                 <ul class="mobile-menu">
                     <!-- <li><a href="#video">Video</a></li> -->
                     <li><a href="#details">Details</a></li>
-                    <li><a href="#team">Team</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#authors">Team</a></li>
                     <li><a href="mailto:folgert.karsdorp@meertens.knaw.nl?subject=Flora Batava">Contact</a></li>
                 </ul>
             </div>
@@ -98,6 +101,7 @@ This project seeks to enhance our understanding of biodiversity shifts by integr
                     </p>
                     <p class="keypoints-desc"> This project examines how social dynamics within the Dutch context have shaped botanical knowledge, focusing on contributions from diverse groups like women and farmers. By analyzing historical data on the spatial and gender distribution of contributors, it aims to uncover the societal influences on botany and trace the beginnings of citizen science in this area.
                     </p>
+                    <a class="keypoints-link" href="#results">See the results</a>
                 </li>
                 
                 <li data-aos="zoom-in" data-aos-delay="100">
@@ -112,6 +116,146 @@ This project aims to uncover biases and cultural impacts in historical botanical
             </ul>
         </div>
     </section>
+
+    <section class="results" id="results">
+      <div class="wrap">
+        <div class="intro">
+          <div class="inner">
+            <p class="subtitle">Results</p>
+            <a href="#results" class="background-title">The people who made the <i>Flora Batava</i></a>
+          </div>
+          <p class="strand">
+            <svg aria-hidden="true" viewBox="0 0 512 512"><path fill="currentColor" d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z"></path></svg>
+            Botany as a sociocultural phenomenon
+          </p>
+          <p class="background-desc">
+            In addition to being the first illustrated flora of the Netherlands, the <i>Flora Batava</i> was also one of
+            the first citizen science projects in the country. Over 400 people, not including internal
+            contributors, such as editors and hired artists, provided information about the 2,000+ species
+            included in the 28 volumes published between 1800 and 1934. These first results of the project's
+            sociocultural strand highlight some of these people, their interactions, and biases: who recorded
+            with whom, where they recorded, and how women took part in Dutch botany.
+          </p>
+          <p class="source">All figures are based on the dataset described in the paper
+            “<a href="https://openhumanitiesdata.metajnl.com/articles/10.5334/johd.497" target="_blank" rel="noopener">Flora Batava (1800–1934):
+            From Historical Citizen Science to Plant Humanities Dataset</a>”.</p>
+          <nav class="toc" aria-label="Results">
+            <a href="#network">Flora Batava network</a>
+            <a href="#pairs">Remarkable pairs</a>
+            <a href="#solo">In a league of their own</a>
+            <a href="#map">Observations mapped</a>
+            <a href="#women">Travelling women</a>
+          </nav>
+        </div>
+
+        <!-- 1. network -->
+        <div class="block" id="network" role="region" aria-labelledby="h-network">
+          <div class="section-head">
+            <span class="eyebrow">Network</span>
+            <h2 id="h-network">Flora Batava network</h2>
+            <p>Each name on a Flora Batava record that lists an additional observer is a circle; names on the
+              same record are joined. Switch between the <strong>observer view</strong> (who they were) and the
+              <strong>taxonomy view</strong> (what they mainly recorded). To best reflect the way authors and other
+              observers understood the species, all analyses use botanical names as they were originally published in
+              the Flora Batava. Hover over a circle to see the name;
+              click it to see the person and their community.</p>
+          </div>
+          <div class="toolbar">
+            <div class="switch" role="group" aria-label="Colour the network by">
+              <button type="button" id="view-observer" aria-pressed="true">Observer view</button>
+              <button type="button" id="view-taxonomy" aria-pressed="false">Taxonomy view</button>
+            </div>
+            <button type="button" class="clear" id="clear" hidden>Clear selection</button>
+          </div>
+          <h3>The main network and five smaller groups</h3>
+          <div class="stage">
+            <figure>
+              <div class="plot"><svg id="net" role="img" aria-labelledby="cap"></svg></div>
+              <figcaption id="cap"></figcaption>
+            </figure>
+            <aside class="side" id="person" aria-live="polite"></aside>
+          </div>
+        </div>
+
+        <!-- 2. pairs -->
+        <div class="block" id="pairs" role="region" aria-labelledby="h-pairs">
+          <div class="section-head">
+            <span class="eyebrow">Ties</span>
+            <h2 id="h-pairs">Remarkable pairs</h2>
+            <p>Eight pairs that stand out: the strongest ties, people who recorded together although they lived far
+              apart, family members, a professor and his student, and two women linked to no one else. A person’s <strong>home</strong> is the
+              place where most of their observations were made; the distance between two homes is measured in a
+              straight line. Click on the number of shared records to see them in the digital version of the Flora
+              Batava provided by the <a href="https://www.kb.nl/" target="_blank" rel="noopener">KB - National Library</a>.
+              Note that a single species can have multiple records.</p>
+          </div>
+          <div class="pairs" id="pair-grid"></div>
+          <p class="hint" id="pair-cap"></p>
+        </div>
+
+        <!-- 2b. solo observers -->
+        <div class="block" id="solo" role="region" aria-labelledby="h-solo">
+          <div class="section-head">
+            <span class="eyebrow">Solo observers</span>
+            <h2 id="h-solo">In a league of their own</h2>
+            <p>Not everyone appears in the network: 294 people only recorded alone, never sharing a record with an
+              additional observer. Twelve of them stand out: two of the Flora Batava’s own authors, three of its
+              illustrators, the most frequent solo observer, two famous naturalists, two members of the nobility and
+              two pharmacists. Click on a name to read more about the person, and on the number of records to see
+              them in the digital version of the Flora Batava provided by the
+              <a href="https://www.kb.nl/" target="_blank" rel="noopener">KB - National Library</a>.</p>
+          </div>
+          <div class="pairs" id="solo-grid"></div>
+        </div>
+
+        <!-- 3. map -->
+        <div class="block" id="map" role="region" aria-labelledby="h-map">
+          <div class="section-head">
+            <span class="eyebrow">Geography</span>
+            <h2 id="h-map">Observations mapped</h2>
+            <p>Every Flora Batava observation with a geographical coordinate, on the provinces as they were in
+              1934, the year of the last volume. Hover over the map to see the province; click a province to see
+              its three most frequent observers. Use the menu in the upper left corner of the map to colour the
+              observations of one botanical division.</p>
+          </div>
+          <div class="stage">
+            <figure class="map-wrap">
+              <div class="plot"><div class="div-menu" id="div-menu" role="group" aria-label="Botanical division"></div><svg id="nl" role="img" aria-labelledby="map-cap"></svg></div>
+              <figcaption id="map-cap"></figcaption>
+            </figure>
+            <aside class="side" id="province" aria-live="polite"></aside>
+          </div>
+        </div>
+
+        <!-- 4. women -->
+        <div class="block" id="women" role="region" aria-labelledby="h-women">
+          <div class="section-head">
+            <span class="eyebrow">Gender</span>
+            <h2 id="h-women">Travelling women</h2>
+            <p>The eight women named on five or more records, as main or additional observer, who recorded beyond
+              their home area, and where they recorded (W. van der Meulen, whose 17 records all come from Wapenvelde,
+              is left out). For every woman, “Max. span” is the largest distance between two visited places;
+              “radius” is the typical distance of records from their centre; “near home” is the share of records
+              within 25 km of home, which is the place where most observations were made.</p>
+          </div>
+          <div class="table-wrap"><table id="women-table"></table></div>
+          <div class="women" id="women-maps"></div>
+          <p class="hint" id="women-cap"></p>
+        </div>
+
+        <div class="notes">
+          <p>Network analysis: only records with an additional observer are included; publications
+            cited as sources are excluded. Total records count every Flora Batava record naming the person as
+            main or additional observer. Main division and family use the raw names. Communities: greedy modularity on the people in the network, weighted by shared
+            records (groups join the community of most of their neighbours).</p>
+          <p>Map: province boundaries of 1934 built from the historical municipal boundaries of <a href="https://nlgis.nl/" target="_blank" rel="noopener">NLGIS</a> (IISG and
+            Meertens Instituut), with present-day provinces from <a href="https://www.pdok.nl/" target="_blank" rel="noopener">PDOK</a> used to group municipalities and the changes
+            since 1934 (Urk, Vijfheerenlanden) restored. Dots are grouped by place; dot area grows with the number
+            of observations.</p>
+        </div>
+      </div>
+    </section>
+    <div class="fb-tip" id="fb-tip" hidden></div>
 
     <section class="background" id="background">
         <div class="left">
@@ -234,13 +378,17 @@ This project aims to uncover biases and cultural impacts in historical botanical
             <nav>
                 <ul>
                     <li><a href="#details">Details</a></li>
+                    <li><a href="#results">Results</a></li>
                     <li><a href="#authors">Team</a></li>
                     <li><a href="mailto:folgert.karsdorp@meertens.knaw.nl?subject=Flora Batava">Contact</a></li>
                 </ul>
             </nav>
+        </header>
     </div>
         
 
+    <script src="js/results-data.js"></script>
+    <script src="js/results.js"></script>
     <script type="text/javascript">
         function toggleMobileMenu(menu) {
             menu.classList.toggle('open');

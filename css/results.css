@@ -1,0 +1,245 @@
+/* Results section: "The people who made the Flora Batava".
+   Everything is scoped to .results so it cannot leak into the rest of the site.
+   Colours and type follow css/main.scss: Roboto Slab for text, Montserrat for
+   labels, gold #D1B042 for accents, olive #626C55 for selected states. */
+
+.results {
+  --ink: #252525;
+  --muted: #5e5e5a;
+  --line: #e2e3dd;
+  --edge: #b4b7ab;
+  --accent: #626C55;      /* site olive (key points band) */
+  --accent-ink: #ffffff;
+  --gold: #D1B042;        /* site gold (subtitles, icons, link underlines) */
+  --panel: #F7F7F7;       /* site light grey */
+  --halo: #F7F7F7;
+  --land: #e7e8e1;
+  --border: #a3a797;
+  --dot: rgba(98, 108, 85, 0.55);
+  --tip-bg: #1A1A1A;
+  --tip-ink: #ffffff;
+  --display: "Roboto Slab", "Times New Roman", Times, serif;
+  --body: "Roboto Slab", "Times New Roman", Times, serif;
+  --ui: "Montserrat", Arial, Helvetica, sans-serif;
+
+  background: #ffffff;
+  color: var(--ink);
+  font-family: var(--body);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
+}
+.results * { box-sizing: border-box; }
+.results .wrap { max-width: 1240px; margin: 0 auto; display: grid; gap: 4em; }
+.results h2, .results h3 { font-family: var(--display); font-weight: 700; text-wrap: balance; margin: 0; color: #000; }
+.results h2 { font-size: 1.5em; line-height: 1.2; }
+.results h3 { font-size: 1.15em; line-height: 1.3; }
+.results p { margin: 0; }
+.results a { color: var(--ink); font-weight: 400; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+.results a:hover { text-decoration-thickness: 2px; }
+.results a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.results strong { font-weight: 700; }
+.results .eyebrow {
+  font-family: var(--ui); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--gold); font-weight: 700;
+}
+.results .num { font-variant-numeric: tabular-nums; }
+
+/* intro: same pattern as the Background / Partners blocks */
+.results .intro { display: grid; gap: 0; max-width: 80ch; }
+.results .intro .background-desc { margin-bottom: 1.2em; font-size: 1em; line-height: 1.8em; }
+.results .intro .background-title { margin-bottom: .6em; color: #000; font-weight: bold; text-decoration: none; }
+.results .intro .inner { margin-bottom: 1em; }
+.results .source { font-size: .85em; color: var(--muted); border-left: 2px solid var(--gold); padding-left: 12px; margin-bottom: 1.6em; }
+.results .strand {
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 1.2em;
+  font-family: var(--ui); font-size: 12px; font-weight: 500; color: var(--accent);
+}
+.results .strand svg { width: 16px; height: 16px; color: var(--gold); }
+.results nav.toc { display: flex; flex-wrap: wrap; gap: 8px; }
+.results nav.toc a {
+  font-family: var(--ui); font-size: 13px; font-weight: 500; text-decoration: none; color: #fff;
+  background: var(--accent); border-radius: 2em; padding: 6px 16px;
+}
+.results nav.toc a:hover { background: #4f5844; }
+
+.results .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.results .switch { display: inline-flex; border: 1px solid var(--line); border-radius: 2em; padding: 3px; background: var(--panel); }
+.results .switch button {
+  font-family: var(--ui); font-size: 13px; font-weight: 500; border: 0; border-radius: 2em; padding: 7px 16px;
+  background: transparent; color: var(--muted); cursor: pointer;
+}
+.results .switch button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.results .switch button:focus-visible, .results .clear:focus-visible, .results .node:focus-visible, .results .prov:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.results .hint { color: var(--muted); font-size: 13px; }
+.results .clear {
+  font-family: var(--ui); font-size: 12px; font-weight: 500; border: 1px solid var(--line); background: transparent; color: var(--ink);
+  border-radius: 2em; padding: 5px 12px; cursor: pointer;
+}
+
+.results .block { display: grid; gap: 1.2em; scroll-margin-top: 16px; }
+.results .section-head { display: grid; gap: 8px; max-width: 80ch; }
+.results .section-head p { color: var(--muted); }
+
+.results .stage { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; align-items: start; }
+@media (max-width: 900px) { .results .stage { grid-template-columns: minmax(0, 1fr); } }
+.results figure { margin: 0; display: grid; gap: 12px; min-width: 0; }
+.results .plot { background: var(--panel); border-radius: 1em; overflow: hidden; }
+.results .plot svg { display: block; width: 100%; height: auto; }
+.results figcaption { display: grid; gap: 10px; font-size: 13.5px; color: var(--muted); max-width: 90ch; }
+.results figcaption strong { color: var(--ink); }
+.results .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-family: var(--ui); font-size: 12px; color: var(--ink); }
+.results .legend span { display: inline-flex; align-items: center; gap: 6px; }
+.results .legend i { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid; display: inline-block; }
+.results .legend i.ring { background: transparent !important; border: 2px solid var(--ink); }
+
+.results .side {
+  background: var(--panel); border-radius: 1em; padding: 1.4em;
+  display: grid; gap: 12px; position: sticky; top: 12px; min-width: 0; font-size: 14px;
+}
+@media (max-width: 900px) { .results .side { position: static; } }
+.results .side .empty { color: var(--muted); }
+.results .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.results .chip { font-family: var(--ui); font-size: 11.5px; font-weight: 500; padding: 2px 9px; border-radius: 2em; border: 1px solid var(--line); background: #fff; display: inline-flex; align-items: center; gap: 6px; color: var(--ink); text-decoration: none; }
+.results a.chip:hover { border-color: var(--gold); }
+.results .chip i { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid; display: inline-block; }
+.results dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; font-size: 13.5px; }
+.results dt { color: var(--muted); }
+.results dd { margin: 0; font-variant-numeric: tabular-nums; min-width: 0; overflow-wrap: anywhere; font-weight: 400; }
+.results .families { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+.results .partners { margin: 0; padding: 0; list-style: none; display: grid; gap: 3px; font-size: 13px; max-height: 200px; overflow-y: auto; }
+.results .partners li { display: flex; justify-content: space-between; gap: 10px; }
+.results .partners b { font-weight: 500; font-variant-numeric: tabular-nums; color: var(--muted); }
+
+/* SVG marks */
+.results .edge { stroke: var(--edge); stroke-linecap: round; transition: opacity .2s; }
+.results .node { cursor: pointer; transition: opacity .2s; }
+.results .node circle.ring { fill: none; stroke: var(--ink); stroke-width: 2.2; }
+.results .label { font-family: var(--ui); font-weight: 500; fill: var(--ink); paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; pointer-events: none; }
+.results .label.picked { font-weight: 700; }
+.results .leader { stroke: var(--muted); stroke-width: 0.7; }
+.results .dim { opacity: 0.13; }
+.results .edge.dim { opacity: 0.06; }
+.results .node.picked circle.body { stroke-width: 3 !important; }
+
+/* hover tooltip (fixed, so it lives outside the scoped block too) */
+.fb-tip {
+  position: fixed; z-index: 20; pointer-events: none; background: #1A1A1A; color: #fff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif; font-size: 12.5px; line-height: 1.4;
+  padding: 6px 10px; border-radius: 6px; max-width: 280px; text-align: left;
+  transform: translate(-50%, calc(-100% - 12px));
+}
+.fb-tip[hidden] { display: none; }
+
+/* pairs */
+.results .pairs { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.results .pair { background: var(--panel); border-radius: 1em; padding: 14px 16px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; transition: opacity .2s; position: relative; }
+.results .pair svg { width: 100%; height: auto; display: block; }
+.results .pair .names { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13.5px; line-height: 1.3; font-weight: 700; }
+.results .pair .names span:last-child { text-align: right; }
+.results .pair .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.results .pair .tags span { font-family: var(--ui); font-size: 10.5px; font-weight: 500; letter-spacing: 0.04em; padding: 1px 8px; border-radius: 2em; background: #fff; color: var(--accent); border: 1px solid var(--line); }
+.results .pair .note { font-size: 13.5px; }
+.results .pair .meta { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.results .pair.dim { opacity: 0.3; }
+.results #pair-grid .meta { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.3em; }
+.results .pair .meta > a, .results .solo-card .meta > a, .results .recs > summary { color: var(--ink); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; cursor: pointer; }
+.results .recs { display: inline-block; }
+.results .recs > summary { display: inline; list-style: none; }
+.results .recs > summary::-webkit-details-marker { display: none; }
+.results .recs > summary::after { content: " \25BE"; font-size: 10px; text-decoration: none; display: inline-block; }
+.results .recs[open] > summary::after { content: " \25B4"; }
+.results .recs > summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
+.results .recs ul { position: absolute; z-index: 15; left: 10px; right: 10px; margin: 6px 0 0; padding: 6px 0; list-style: none;
+  max-height: 240px; overflow-y: auto; background: #fff; border: 1px solid var(--line);
+  border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.15); }
+.results .recs li a { display: block; padding: 4px 12px; font-size: 13px; font-style: italic; color: var(--ink); text-decoration: none; }
+.results .recs li a:hover, .results .recs li a:focus-visible { background: var(--panel); color: var(--accent); outline: none; }
+
+/* solo observers */
+.results .solo-card { position: relative; background: var(--panel); border-radius: 1em; padding: 14px 16px 16px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.results .solo-card h3 { font-size: 1.05em; }
+.results .solo-card ul.people { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.results .solo-card .who { font-size: 13.5px; line-height: 1.3; font-weight: 400; }
+.results .solo-card .who a { text-decoration-color: var(--border); }
+.results .solo-card .who a:hover { text-decoration-color: var(--gold); }
+.results .solo-card .meta { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.3em; margin-top: 2px; }
+
+/* maps */
+.results .prov { fill: var(--land); stroke: var(--border); stroke-width: 0.8; cursor: pointer; transition: opacity .2s; }
+.results .prov:hover { fill: #dcdfd3; }
+.results .prov.on { stroke: var(--gold); stroke-width: 2.4; }
+.results .prov.off { opacity: 0.35; }
+.results .dots circle { fill: var(--dot); pointer-events: none; transition: opacity .2s; }
+.results .dots circle.off { opacity: 0.12; }
+.results .map-wrap { max-width: 640px; }
+.results .map-wrap .plot { position: relative; }
+/* keep the coast of Noord-Holland clear of the division menu in the upper left */
+.results .map-wrap #nl { padding: 32px 12px 12px 48px; }
+@media (max-width: 560px) { .results .map-wrap #nl { padding: 8px; } }
+.results .div-menu { position: absolute; top: 10px; left: 10px; display: grid; gap: 2px; padding: 8px;
+  background: rgba(255, 255, 255, 0.9); border-radius: 8px; }
+.results .div-menu .eyebrow { padding: 0 6px 2px; }
+.results .div-menu button { display: flex; align-items: center; gap: 7px; font-family: var(--ui); font-size: 12px; line-height: 1.2;
+  text-align: left; color: var(--ink); background: none; border: 0; border-radius: 4px; padding: 3px 6px; cursor: pointer; }
+.results .div-menu button:hover { background: var(--panel); }
+.results .div-menu button[aria-pressed="true"] { background: var(--land); font-weight: 700; }
+.results .div-menu button:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.results .div-menu i { width: 11px; height: 11px; border-radius: 50%; border: 1.5px solid; flex: none; }
+.results .div-menu b { font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; margin-left: auto; padding-left: 8px; }
+.results .dots.muted circle { opacity: 0.15; }
+.results .div-dots circle { pointer-events: none; fill-opacity: 0.85; stroke-width: 0.9; transition: opacity .2s; }
+.results .div-dots circle.off { opacity: 0.1; }
+@media (max-width: 560px) { .results .div-menu { position: static; border-radius: 1em 1em 0 0; border-bottom: 1px solid var(--line); grid-template-columns: 1fr 1fr; } .results .div-menu .eyebrow { grid-column: 1 / -1; } }
+.results .bars { display: grid; gap: 8px; }
+.results .bar { display: grid; gap: 3px; font-size: 13px; }
+.results .bar .track { height: 10px; background: #fff; border-radius: 2px; overflow: hidden; }
+.results .bar .fill { height: 100%; border-radius: 2px; border: 1.5px solid; }
+.results .bar .row { display: flex; justify-content: space-between; gap: 10px; }
+.results .bar .row b { font-weight: 500; font-variant-numeric: tabular-nums; color: var(--muted); }
+
+/* women */
+.results .table-wrap { overflow-x: auto; background: var(--panel); border-radius: 1em; }
+.results table { border-collapse: collapse; width: 100%; font-size: 13.5px; min-width: 760px; }
+.results th, .results td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.results th { font-family: var(--ui); font-weight: 700; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.results td.n, .results th.n { text-align: right; font-variant-numeric: tabular-nums; }
+.results tr:last-child td { border-bottom: 0; }
+.results .women { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.results .woman { background: var(--panel); border-radius: 1em; padding: 14px 16px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.results .woman h3 { font-size: 1.05em; }
+.results .woman .meta { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.results .woman .inprov { font-size: 13px; min-height: 2.8em; }
+.results .site { stroke-width: 1.4; transition: opacity .2s; }
+.results .site-ring { fill: none; stroke: var(--ink); stroke-width: 1.4; pointer-events: none; }
+.results .woman .prov { stroke-width: 0.6; }
+.results .woman .prov.on { stroke-width: 1.8; }
+.results .years { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.results .years button { font-family: var(--ui); font-size: 11.5px; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 1.2; color: var(--ink);
+  background: #fff; border: 1px solid var(--line); border-radius: 2em; padding: 2px 8px; cursor: pointer; }
+.results .years button:hover { border-color: var(--border); }
+.results .years button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.results .years button:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.results .years .play { padding: 2px 7px; background: none; }
+.results .site.faded { opacity: 0.1; }
+.results .woman .key { display: flex; flex-wrap: wrap; gap: 4px 12px; font-family: var(--ui); font-size: 11.5px; color: var(--muted); }
+.results .woman .key span { display: inline-flex; align-items: center; gap: 5px; }
+.results .woman .key i { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid; }
+.results .site-ring.faded { opacity: 0.15; }
+
+.results .notes { font-size: 12.5px; color: var(--muted); max-width: 90ch; border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 8px; }
+
+/* link from the "Botany as a sociocultural phenomenon" key point */
+.keypoints-link {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif; font-size: .85em; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase; color: #626C55;
+  border-bottom: 2px solid #D1B042; padding-bottom: 2px; margin-top: -1em;
+}
+.keypoints-link:hover { color: #000; }
+
+@media only screen and (min-width: 1150px) {
+  .results { font-size: 16px; }
+  .results h2 { font-size: 1.7em; }
+}
+@media (prefers-reduced-motion: reduce) { .results * { transition: none !important; } }
